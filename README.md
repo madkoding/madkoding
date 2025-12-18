@@ -13,7 +13,7 @@
 * 👂 `My name is`: **madKoding**,
 * 📍 `Location`: **Chile**,
 * 💼 `I'm currently working on`: **Full Stack Development**,
-* 🌱 `I'm currently learning`: **Docker, Node.js & React**,
+* 🌱 `I'm currently learning`: **Rust, C, C#**,
 * ❤️ `I love`: **Creating tools and automation**,
 * 💻 `Favorite langs`: **JavaScript, Python & Shell**  
 
