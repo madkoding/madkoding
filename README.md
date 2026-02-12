@@ -125,5 +125,5 @@
 <br/>
 
 <p align="center">
-  <i>🧩 Back to your reality 🧩</i>
+  <i>🧩 Back to your reality ;D 🧩</i>
 </p>
