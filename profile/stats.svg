@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" fill="none">
+  <rect x="0.5" y="0.5" rx="4.5" width="494" height="194" fill="#00000000" stroke="#e4e2e2" stroke-opacity="0"/>
+  <text x="247.5" y="105" text-anchor="middle" fill="#a9b4c4" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-size="14">
+    Stats will be generated on the next workflow run
+  </text>
+</svg>
