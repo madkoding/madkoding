@@ -34,6 +34,9 @@ My work spans the full depth of the stack:
 <td width="50%" valign="top">
 
 #### [madOS](https://github.com/madkoding/mad-os)
+
+<img src="./profile/projects/mados.svg" width="100%" alt="madOS - AI-Orchestrated Arch Linux Distribution"/>
+
 AI-orchestrated Arch Linux distribution for resource-constrained systems (1.9GB+ RAM). Features adaptive GPU rendering (auto-switches between hardware acceleration and software fallback), ZRAM with zstd compression, audio quality auto-detection up to 192kHz/32-bit, USB persistence with dynamic space allocation, and Sway Wayland compositor at ~67MB RAM footprint. Automated ISO builds via GitHub Actions.
 
 `Shell` `Python` `Arch Linux` `Wayland` `GitHub Actions`
@@ -42,6 +45,9 @@ AI-orchestrated Arch Linux distribution for resource-constrained systems (1.9GB+
 <td width="50%" valign="top">
 
 #### [Fractal-Mind](https://github.com/madkoding/fractalmind)
+
+<img src="./profile/projects/fractalmind.svg" width="100%" alt="Fractal-Mind - AI Cognitive Engine with Evolutionary Memory"/>
+
 AI cognitive engine with evolutionary memory built on RAPTOR-based fractal graph structures and HNSW vector indexing over SurrealDB. Dual-phase architecture: **Vigilia** (wakefulness) for real-time response via graph navigation, **REM** (sleep) for asynchronous learning and memory consolidation. Multi-user namespace isolation, PDF/OCR ingestion, multi-embedding support (Nomic, BGE, CLIP). Full roadmap delivered — 12/12 features complete.
 
 `Rust` `Axum` `SurrealDB` `Tauri` `Vector Embeddings`
@@ -52,6 +58,9 @@ AI cognitive engine with evolutionary memory built on RAPTOR-based fractal graph
 <td width="50%" valign="top">
 
 #### [Neuro Agent](https://github.com/madkoding/neuro-agent)
+
+<img src="./profile/projects/neuro-agent.svg" width="100%" alt="Neuro Agent - AI Programming Assistant with Dual-Model Orchestration"/>
+
 AI programming assistant in Rust with dual-model orchestration — routes tasks between fast local models (Ollama) and heavy compute providers (OpenAI, Anthropic, Groq) through a unified provider abstraction. Features AST-based code review with cyclomatic complexity detection, LRU context caching (10x response improvement), smart error recovery with retry/rollback, and a performance benchmarking framework with regression detection. 219+ tests, 100% pass rate.
 
 `Rust` `Ollama` `Anthropic` `OpenAI` `ratatui`
@@ -60,6 +69,9 @@ AI programming assistant in Rust with dual-model orchestration — routes tasks 
 <td width="50%" valign="top">
 
 #### [Git Reports](https://github.com/madkoding/git-reports)
+
+<img src="./profile/projects/git-reports.svg" width="100%" alt="Git Reports - Automated Git Analytics Engine"/>
+
 Automated Git analytics engine in Rust that generates work summaries from repository activity. Analyzes commits, contributors, and activity patterns across time periods with multi-format export. Integrates LLM-powered report generation for natural language summaries. CI/CD with GitHub Actions and 100% passing test coverage.
 
 `Rust` `Git` `LLM` `GitHub Actions` `CI/CD`
@@ -70,6 +82,9 @@ Automated Git analytics engine in Rust that generates work summaries from reposi
 <td width="50%" valign="top">
 
 #### [MMORPGVT](https://github.com/madkoding/mmorpgvt)
+
+<img src="./profile/projects/mmorpgvt.svg" width="100%" alt="MMORPGVT - Real-time Interactive MMORPG for Twitch"/>
+
 Real-time interactive MMORPG engine for Twitch VTuber streams. Chat-driven mechanics: battles, exploration, virtual economy, and collaborative quests — all triggered from viewer commands. Built with Next.js and Firebase for real-time state sync. Full test suite with Jest, ESLint, Prettier, and automated formatting.
 
 `TypeScript` `Next.js` `Firebase` `Jest` `Twitch API`
@@ -78,6 +93,9 @@ Real-time interactive MMORPG engine for Twitch VTuber streams. Chat-driven mecha
 <td width="50%" valign="top">
 
 #### [Docker SlimeVR](https://github.com/madkoding/docker-slimevr-web-server)
+
+<img src="./profile/projects/docker-slimevr.svg" width="100%" alt="Docker SlimeVR - Production-Ready Docker for VR Tracking"/>
+
 Production-ready Docker environment for SlimeVR full-body tracking server with dynamic Web GUI. Auto-downloads server JAR and GUI assets from GitHub releases, serves via Nginx with LAN IP auto-redirect. Exposes tracker (UDP 6969), WebSocket bridge, OSC router, VMC, and VRC ports. Persistent volume management for config and GUI assets.
 
 `Docker` `Nginx` `SlimeVR` `VR` `Networking`

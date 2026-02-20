@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e17"/>
+      <stop offset="50%" style="stop-color:#111927"/>
+      <stop offset="100%" style="stop-color:#1a2332"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#ef4444"/>
+    </linearGradient>
+    <linearGradient id="rust" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dea584"/>
+      <stop offset="100%" style="stop-color:#b7410e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="320" rx="12" fill="url(#bg)"/>
+
+  <!-- Orchestration flow diagram -->
+  <!-- Input node -->
+  <rect x="40" y="120" width="80" height="40" rx="8" fill="#111927" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="80" y="144" font-family="monospace" font-size="11" fill="#58a6ff" text-anchor="middle">Task</text>
+
+  <!-- Arrow -->
+  <line x1="120" y1="140" x2="150" y2="140" stroke="#3d4450" stroke-width="1.5"/>
+  <polygon points="150,135 160,140 150,145" fill="#3d4450"/>
+
+  <!-- Router node -->
+  <rect x="160" y="105" width="100" height="70" rx="10" fill="#111927" stroke="#f97316" stroke-width="2"/>
+  <text x="210" y="135" font-family="monospace" font-size="11" font-weight="bold" fill="#f97316" text-anchor="middle">Router</text>
+  <text x="210" y="155" font-family="monospace" font-size="9" fill="#8b949e" text-anchor="middle">Dual-Model</text>
+
+  <!-- Top branch - Local -->
+  <line x1="260" y1="125" x2="290" y2="85" stroke="#27c93f" stroke-width="1.5"/>
+  <polygon points="287,80 297,82 290,90" fill="#27c93f"/>
+
+  <rect x="290" y="60" width="100" height="50" rx="8" fill="#111927" stroke="#27c93f" stroke-width="1.2"/>
+  <text x="340" y="82" font-family="monospace" font-size="10" fill="#27c93f" text-anchor="middle">Ollama</text>
+  <text x="340" y="98" font-family="monospace" font-size="9" fill="#8b949e" text-anchor="middle">Fast / Local</text>
+
+  <!-- Bottom branch - Cloud -->
+  <line x1="260" y1="155" x2="290" y2="195" stroke="#a78bfa" stroke-width="1.5"/>
+  <polygon points="287,200 297,198 290,190" fill="#a78bfa"/>
+
+  <rect x="290" y="180" width="100" height="50" rx="8" fill="#111927" stroke="#a78bfa" stroke-width="1.2"/>
+  <text x="340" y="200" font-family="monospace" font-size="10" fill="#a78bfa" text-anchor="middle">Cloud APIs</text>
+  <text x="340" y="216" font-family="monospace" font-size="9" fill="#8b949e" text-anchor="middle">Heavy Compute</text>
+
+  <!-- LRU Cache -->
+  <rect x="55" y="210" width="90" height="45" rx="6" fill="#111927" stroke="#ffbd2e" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="100" y="230" font-family="monospace" font-size="9" fill="#ffbd2e" text-anchor="middle">LRU Cache</text>
+  <text x="100" y="245" font-family="monospace" font-size="9" fill="#27c93f" text-anchor="middle">10x faster</text>
+
+  <!-- AST Review -->
+  <rect x="170" y="220" width="100" height="45" rx="6" fill="#111927" stroke="#ef4444" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="220" y="240" font-family="monospace" font-size="9" fill="#ef4444" text-anchor="middle">AST Review</text>
+  <text x="220" y="255" font-family="monospace" font-size="9" fill="#8b949e" text-anchor="middle">Complexity ↓</text>
+
+  <!-- Right side content -->
+  <text x="450" y="65" font-family="sans-serif" font-size="34" font-weight="bold" fill="#ffffff" filter="url(#glow)">Neuro Agent</text>
+  <rect x="450" y="77" width="140" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <text x="450" y="108" font-family="sans-serif" font-size="14" fill="#8b949e">AI Programming Assistant</text>
+  <text x="450" y="128" font-family="sans-serif" font-size="14" fill="#8b949e">with Dual-Model Orchestration</text>
+
+  <!-- Features list -->
+  <g transform="translate(450, 148)">
+    <text x="0" y="0" font-family="monospace" font-size="11" fill="#f97316">▸</text>
+    <text x="14" y="0" font-family="monospace" font-size="11" fill="#c9d1d9">Multi-provider abstraction</text>
+  </g>
+  <g transform="translate(450, 168)">
+    <text x="0" y="0" font-family="monospace" font-size="11" fill="#f97316">▸</text>
+    <text x="14" y="0" font-family="monospace" font-size="11" fill="#c9d1d9">AST code review + cyclomatic</text>
+  </g>
+  <g transform="translate(450, 188)">
+    <text x="0" y="0" font-family="monospace" font-size="11" fill="#f97316">▸</text>
+    <text x="14" y="0" font-family="monospace" font-size="11" fill="#c9d1d9">Smart retry + rollback</text>
+  </g>
+  <g transform="translate(450, 208)">
+    <text x="0" y="0" font-family="monospace" font-size="11" fill="#f97316">▸</text>
+    <text x="14" y="0" font-family="monospace" font-size="11" fill="#c9d1d9">Performance benchmarking</text>
+  </g>
+
+  <!-- Test status -->
+  <g transform="translate(450, 232)">
+    <rect width="220" height="28" rx="6" fill="#0d1117" stroke="#27c93f" stroke-width="1"/>
+    <circle cx="16" cy="14" r="4" fill="#27c93f"/>
+    <text x="28" y="18" font-family="monospace" font-size="11" fill="#27c93f">219+ tests — 100% pass rate</text>
+  </g>
+
+  <!-- Tech badges -->
+  <g transform="translate(450, 275)">
+    <rect width="48" height="22" rx="4" fill="#dea584" opacity="0.15"/>
+    <text x="24" y="15" font-family="monospace" font-size="10" fill="#dea584" text-anchor="middle">Rust</text>
+  </g>
+  <g transform="translate(506, 275)">
+    <rect width="62" height="22" rx="4" fill="#ffffff" opacity="0.1"/>
+    <text x="31" y="15" font-family="monospace" font-size="10" fill="#c9d1d9" text-anchor="middle">Ollama</text>
+  </g>
+  <g transform="translate(576, 275)">
+    <rect width="78" height="22" rx="4" fill="#191919" opacity="0.3"/>
+    <text x="39" y="15" font-family="monospace" font-size="10" fill="#c9d1d9" text-anchor="middle">Anthropic</text>
+  </g>
+  <g transform="translate(662, 275)">
+    <rect width="68" height="22" rx="4" fill="#412991" opacity="0.2"/>
+    <text x="34" y="15" font-family="monospace" font-size="10" fill="#a78bfa" text-anchor="middle">OpenAI</text>
+  </g>
+</svg>

@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d1a"/>
+      <stop offset="50%" style="stop-color:#1a1033"/>
+      <stop offset="100%" style="stop-color:#2d1654"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9146ff"/>
+      <stop offset="100%" style="stop-color:#ff75e6"/>
+    </linearGradient>
+    <linearGradient id="healthbar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#27c93f"/>
+      <stop offset="70%" style="stop-color:#27c93f"/>
+      <stop offset="100%" style="stop-color:#ffbd2e"/>
+    </linearGradient>
+    <linearGradient id="manabar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="320" rx="12" fill="url(#bg)"/>
+
+  <!-- Twitch chat simulation -->
+  <rect x="30" y="25" width="350" height="270" rx="8" fill="#18181b" stroke="#9146ff" stroke-width="1.5" opacity="0.9"/>
+  <rect x="30" y="25" width="350" height="30" rx="8" fill="#1f1f23"/>
+  <rect x="30" y="49" width="350" height="6" fill="#1f1f23"/>
+  <text x="205" y="45" font-family="sans-serif" font-size="12" font-weight="bold" fill="#efeff1" text-anchor="middle">STREAM CHAT</text>
+  <circle cx="355" cy="40" r="5" fill="#eb0400"/>
+
+  <!-- Chat messages -->
+  <g transform="translate(45, 75)">
+    <text x="0" y="0" font-family="sans-serif" font-size="11" fill="#9146ff" font-weight="bold">DragonSlayer42:</text>
+    <text x="110" y="0" font-family="sans-serif" font-size="11" fill="#efeff1">!attack goblin</text>
+  </g>
+  <g transform="translate(45, 98)">
+    <text x="0" y="0" font-family="sans-serif" font-size="11" fill="#ff75e6" font-weight="bold">PixelMage:</text>
+    <text x="82" y="0" font-family="sans-serif" font-size="11" fill="#efeff1">!cast fireball</text>
+  </g>
+  <g transform="translate(45, 121)">
+    <rect x="-5" y="-12" width="310" height="18" rx="3" fill="#9146ff" opacity="0.15"/>
+    <text x="0" y="0" font-family="sans-serif" font-size="11" fill="#bf94ff" font-weight="bold">⚔ BATTLE:</text>
+    <text x="72" y="0" font-family="sans-serif" font-size="11" fill="#27c93f">DragonSlayer42 dealt 45 dmg!</text>
+  </g>
+  <g transform="translate(45, 144)">
+    <text x="0" y="0" font-family="sans-serif" font-size="11" fill="#00f0ff" font-weight="bold">NightWolf_:</text>
+    <text x="88" y="0" font-family="sans-serif" font-size="11" fill="#efeff1">!explore dungeon</text>
+  </g>
+  <g transform="translate(45, 167)">
+    <text x="0" y="0" font-family="sans-serif" font-size="11" fill="#ffbd2e" font-weight="bold">CoinHunter:</text>
+    <text x="90" y="0" font-family="sans-serif" font-size="11" fill="#efeff1">!trade 50g potion</text>
+  </g>
+  <g transform="translate(45, 190)">
+    <rect x="-5" y="-12" width="310" height="18" rx="3" fill="#27c93f" opacity="0.1"/>
+    <text x="0" y="0" font-family="sans-serif" font-size="11" fill="#27c93f" font-weight="bold">✦ QUEST:</text>
+    <text x="60" y="0" font-family="sans-serif" font-size="11" fill="#27c93f">3 players joined raid!</text>
+  </g>
+  <g transform="translate(45, 213)">
+    <text x="0" y="0" font-family="sans-serif" font-size="11" fill="#ef4444" font-weight="bold">BerserkerX:</text>
+    <text x="88" y="0" font-family="sans-serif" font-size="11" fill="#efeff1">!quest accept</text>
+  </g>
+
+  <!-- Player HUD mini -->
+  <rect x="45" y="235" width="160" height="45" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="55" y="252" font-family="monospace" font-size="9" fill="#8b949e">HP</text>
+  <rect x="72" y="244" width="120" height="8" rx="4" fill="#1c2333"/>
+  <rect x="72" y="244" width="96" height="8" rx="4" fill="url(#healthbar)"/>
+  <text x="55" y="272" font-family="monospace" font-size="9" fill="#8b949e">MP</text>
+  <rect x="72" y="264" width="120" height="8" rx="4" fill="#1c2333"/>
+  <rect x="72" y="264" width="72" height="8" rx="4" fill="url(#manabar)"/>
+
+  <!-- Gold counter -->
+  <rect x="220" y="235" width="90" height="45" rx="6" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="265" y="255" font-family="monospace" font-size="11" fill="#ffbd2e" text-anchor="middle">⬡ 1,250g</text>
+  <text x="265" y="272" font-family="monospace" font-size="9" fill="#8b949e" text-anchor="middle">Lv. 23</text>
+
+  <!-- Right side content -->
+  <text x="430" y="65" font-family="sans-serif" font-size="34" font-weight="bold" fill="#ffffff" filter="url(#glow)">MMORPGVT</text>
+  <rect x="430" y="77" width="140" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <text x="430" y="108" font-family="sans-serif" font-size="14" fill="#8b949e">Real-time Interactive MMORPG</text>
+  <text x="430" y="128" font-family="sans-serif" font-size="14" fill="#8b949e">for Twitch VTuber Streams</text>
+
+  <!-- Features -->
+  <g transform="translate(430, 155)">
+    <text x="0" y="0" font-family="monospace" font-size="11" fill="#9146ff">▸</text>
+    <text x="14" y="0" font-family="monospace" font-size="11" fill="#c9d1d9">Chat-driven combat &amp; quests</text>
+  </g>
+  <g transform="translate(430, 175)">
+    <text x="0" y="0" font-family="monospace" font-size="11" fill="#9146ff">▸</text>
+    <text x="14" y="0" font-family="monospace" font-size="11" fill="#c9d1d9">Virtual economy &amp; trading</text>
+  </g>
+  <g transform="translate(430, 195)">
+    <text x="0" y="0" font-family="monospace" font-size="11" fill="#9146ff">▸</text>
+    <text x="14" y="0" font-family="monospace" font-size="11" fill="#c9d1d9">Real-time state sync (Firebase)</text>
+  </g>
+  <g transform="translate(430, 215)">
+    <text x="0" y="0" font-family="monospace" font-size="11" fill="#9146ff">▸</text>
+    <text x="14" y="0" font-family="monospace" font-size="11" fill="#c9d1d9">Exploration &amp; dungeons</text>
+  </g>
+
+  <!-- Live indicator -->
+  <g transform="translate(430, 238)">
+    <rect width="80" height="24" rx="4" fill="#eb0400" opacity="0.2"/>
+    <circle cx="14" cy="12" r="4" fill="#eb0400"/>
+    <text x="24" y="16" font-family="sans-serif" font-size="11" font-weight="bold" fill="#eb0400">LIVE</text>
+  </g>
+
+  <!-- Tech badges -->
+  <g transform="translate(430, 278)">
+    <rect width="85" height="22" rx="4" fill="#007ACC" opacity="0.15"/>
+    <text x="42" y="15" font-family="monospace" font-size="10" fill="#58a6ff" text-anchor="middle">TypeScript</text>
+  </g>
+  <g transform="translate(523, 278)">
+    <rect width="62" height="22" rx="4" fill="#ffffff" opacity="0.1"/>
+    <text x="31" y="15" font-family="monospace" font-size="10" fill="#c9d1d9" text-anchor="middle">Next.js</text>
+  </g>
+  <g transform="translate(593, 278)">
+    <rect width="68" height="22" rx="4" fill="#FFCA28" opacity="0.15"/>
+    <text x="34" y="15" font-family="monospace" font-size="10" fill="#ffbd2e" text-anchor="middle">Firebase</text>
+  </g>
+  <g transform="translate(669, 278)">
+    <rect width="82" height="22" rx="4" fill="#9146ff" opacity="0.15"/>
+    <text x="41" y="15" font-family="monospace" font-size="10" fill="#9146ff" text-anchor="middle">Twitch API</text>
+  </g>
+</svg>
