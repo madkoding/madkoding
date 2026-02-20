@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d1a"/>
+      <stop offset="50%" style="stop-color:#1a0a2e"/>
+      <stop offset="100%" style="stop-color:#2d1b69"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff00a0"/>
+      <stop offset="100%" style="stop-color:#7b2ff7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="320" rx="12" fill="url(#bg)"/>
+
+  <!-- Fractal graph network visualization -->
+  <!-- Nodes -->
+  <circle cx="120" cy="160" r="30" fill="none" stroke="#ff00a0" stroke-width="1.5" opacity="0.6" filter="url(#softglow)"/>
+  <circle cx="120" cy="160" r="8" fill="#ff00a0" opacity="0.8"/>
+
+  <circle cx="200" cy="80" r="20" fill="none" stroke="#7b2ff7" stroke-width="1" opacity="0.5"/>
+  <circle cx="200" cy="80" r="5" fill="#7b2ff7" opacity="0.7"/>
+
+  <circle cx="220" cy="240" r="22" fill="none" stroke="#7b2ff7" stroke-width="1" opacity="0.5"/>
+  <circle cx="220" cy="240" r="5" fill="#7b2ff7" opacity="0.7"/>
+
+  <circle cx="300" cy="140" r="18" fill="none" stroke="#ff00a0" stroke-width="1" opacity="0.4"/>
+  <circle cx="300" cy="140" r="4" fill="#ff00a0" opacity="0.6"/>
+
+  <circle cx="280" cy="50" r="12" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.4"/>
+  <circle cx="280" cy="50" r="3" fill="#58a6ff" opacity="0.6"/>
+
+  <circle cx="330" cy="260" r="14" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.4"/>
+  <circle cx="330" cy="260" r="3" fill="#58a6ff" opacity="0.6"/>
+
+  <circle cx="60" cy="90" r="10" fill="none" stroke="#ff00a0" stroke-width="1" opacity="0.3"/>
+  <circle cx="60" cy="90" r="3" fill="#ff00a0" opacity="0.5"/>
+
+  <circle cx="80" cy="250" r="12" fill="none" stroke="#7b2ff7" stroke-width="1" opacity="0.3"/>
+  <circle cx="80" cy="250" r="3" fill="#7b2ff7" opacity="0.5"/>
+
+  <circle cx="350" cy="180" r="10" fill="none" stroke="#7b2ff7" stroke-width="1" opacity="0.3"/>
+  <circle cx="350" cy="180" r="3" fill="#7b2ff7" opacity="0.5"/>
+
+  <!-- Recursive smaller nodes -->
+  <circle cx="160" cy="120" r="6" fill="none" stroke="#ff00a0" stroke-width="0.8" opacity="0.3"/>
+  <circle cx="160" cy="120" r="2" fill="#ff00a0" opacity="0.4"/>
+
+  <circle cx="170" cy="200" r="6" fill="none" stroke="#7b2ff7" stroke-width="0.8" opacity="0.3"/>
+  <circle cx="170" cy="200" r="2" fill="#7b2ff7" opacity="0.4"/>
+
+  <circle cx="250" cy="180" r="8" fill="none" stroke="#58a6ff" stroke-width="0.8" opacity="0.3"/>
+  <circle cx="250" cy="180" r="2" fill="#58a6ff" opacity="0.4"/>
+
+  <!-- Connections (edges) -->
+  <line x1="120" y1="160" x2="200" y2="80" stroke="#ff00a0" stroke-width="1" opacity="0.3"/>
+  <line x1="120" y1="160" x2="220" y2="240" stroke="#7b2ff7" stroke-width="1" opacity="0.3"/>
+  <line x1="120" y1="160" x2="300" y2="140" stroke="#ff00a0" stroke-width="0.8" opacity="0.2"/>
+  <line x1="200" y1="80" x2="280" y2="50" stroke="#58a6ff" stroke-width="0.8" opacity="0.2"/>
+  <line x1="200" y1="80" x2="300" y2="140" stroke="#7b2ff7" stroke-width="0.8" opacity="0.2"/>
+  <line x1="220" y1="240" x2="330" y2="260" stroke="#58a6ff" stroke-width="0.8" opacity="0.2"/>
+  <line x1="300" y1="140" x2="350" y2="180" stroke="#7b2ff7" stroke-width="0.8" opacity="0.2"/>
+  <line x1="60" y1="90" x2="120" y2="160" stroke="#ff00a0" stroke-width="0.8" opacity="0.2"/>
+  <line x1="80" y1="250" x2="120" y2="160" stroke="#7b2ff7" stroke-width="0.8" opacity="0.2"/>
+  <line x1="160" y1="120" x2="120" y2="160" stroke="#ff00a0" stroke-width="0.5" opacity="0.2"/>
+  <line x1="160" y1="120" x2="200" y2="80" stroke="#ff00a0" stroke-width="0.5" opacity="0.2"/>
+  <line x1="170" y1="200" x2="120" y2="160" stroke="#7b2ff7" stroke-width="0.5" opacity="0.2"/>
+  <line x1="170" y1="200" x2="220" y2="240" stroke="#7b2ff7" stroke-width="0.5" opacity="0.2"/>
+  <line x1="250" y1="180" x2="300" y2="140" stroke="#58a6ff" stroke-width="0.5" opacity="0.2"/>
+  <line x1="250" y1="180" x2="220" y2="240" stroke="#58a6ff" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Right side content -->
+  <text x="440" y="65" font-family="sans-serif" font-size="34" font-weight="bold" fill="#ffffff" filter="url(#glow)">Fractal-Mind</text>
+  <rect x="440" y="77" width="160" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <text x="440" y="108" font-family="sans-serif" font-size="14" fill="#8b949e">AI Cognitive Engine with</text>
+  <text x="440" y="128" font-family="sans-serif" font-size="14" fill="#8b949e">Evolutionary Memory</text>
+
+  <!-- Dual phase boxes -->
+  <rect x="440" y="148" width="155" height="65" rx="8" fill="#1a0a2e" stroke="#ff00a0" stroke-width="1" opacity="0.8"/>
+  <text x="517" y="170" font-family="monospace" font-size="12" font-weight="bold" fill="#ff00a0" text-anchor="middle">VIGILIA</text>
+  <text x="517" y="186" font-family="monospace" font-size="9" fill="#c9d1d9" text-anchor="middle">Real-time response</text>
+  <text x="517" y="200" font-family="monospace" font-size="9" fill="#8b949e" text-anchor="middle">Graph navigation</text>
+
+  <rect x="605" y="148" width="155" height="65" rx="8" fill="#1a0a2e" stroke="#7b2ff7" stroke-width="1" opacity="0.8"/>
+  <text x="682" y="170" font-family="monospace" font-size="12" font-weight="bold" fill="#7b2ff7" text-anchor="middle">REM</text>
+  <text x="682" y="186" font-family="monospace" font-size="9" fill="#c9d1d9" text-anchor="middle">Async learning</text>
+  <text x="682" y="200" font-family="monospace" font-size="9" fill="#8b949e" text-anchor="middle">Memory consolidation</text>
+
+  <!-- Status -->
+  <g transform="translate(440, 230)">
+    <rect width="320" height="28" rx="6" fill="#0d1117" stroke="#27c93f" stroke-width="1"/>
+    <circle cx="16" cy="14" r="4" fill="#27c93f"/>
+    <text x="28" y="18" font-family="monospace" font-size="11" fill="#27c93f">12/12 features complete — Roadmap delivered</text>
+  </g>
+
+  <!-- Tech badges -->
+  <g transform="translate(440, 272)">
+    <rect width="48" height="22" rx="4" fill="#dea584" opacity="0.15"/>
+    <text x="24" y="15" font-family="monospace" font-size="10" fill="#dea584" text-anchor="middle">Rust</text>
+  </g>
+  <g transform="translate(496, 272)">
+    <rect width="50" height="22" rx="4" fill="#ffffff" opacity="0.1"/>
+    <text x="25" y="15" font-family="monospace" font-size="10" fill="#c9d1d9" text-anchor="middle">Axum</text>
+  </g>
+  <g transform="translate(554, 272)">
+    <rect width="78" height="22" rx="4" fill="#ff00a0" opacity="0.15"/>
+    <text x="39" y="15" font-family="monospace" font-size="10" fill="#ff00a0" text-anchor="middle">SurrealDB</text>
+  </g>
+  <g transform="translate(640, 272)">
+    <rect width="52" height="22" rx="4" fill="#58a6ff" opacity="0.15"/>
+    <text x="26" y="15" font-family="monospace" font-size="10" fill="#58a6ff" text-anchor="middle">Tauri</text>
+  </g>
+  <g transform="translate(700, 272)">
+    <rect width="58" height="22" rx="4" fill="#7b2ff7" opacity="0.15"/>
+    <text x="29" y="15" font-family="monospace" font-size="10" fill="#7b2ff7" text-anchor="middle">HNSW</text>
+  </g>
+</svg>
