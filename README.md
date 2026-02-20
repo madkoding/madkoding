@@ -156,10 +156,6 @@ Production-ready Docker environment for SlimeVR full-body tracking server with d
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=madkoding&theme=material_palenight" />
 </p>
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=madkoding&theme=algolia&no-frame=true&column=4&margin-w=15&margin-h=15" />
-</p>
-
 ---
 
 <p align="center">
