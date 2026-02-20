@@ -16,6 +16,8 @@
 
 Software engineer focused on **AI systems**, **systems-level programming in Rust**, and **full-stack development**. I design and build end-to-end solutions — from custom Linux distributions and embedded firmware to LLM orchestration engines and real-time web applications.
 
+Currently building the **NEURO ecosystem**: an interconnected platform where [madOS](https://github.com/madkoding/mad-os) provides the AI-integrated OS layer, [Fractal-Mind](https://github.com/madkoding/fractalmind) serves as the cognitive memory engine, [Neuro Agent](https://github.com/madkoding/neuro-agent) orchestrates multi-model AI workflows, and [neuro-ollama](https://github.com/madkoding/neuro-ollama) manages GPU-accelerated local inference.
+
 My work spans the full depth of the stack:
 
 - **AI & Knowledge Systems** — RAG pipelines, LLM orchestration with multi-provider abstraction, vector embeddings, fractal graph-based memory architectures
@@ -33,17 +35,17 @@ My work spans the full depth of the stack:
 <td width="50%" valign="top">
 
 #### [madOS](https://github.com/madkoding/mad-os)
-AI-orchestrated Arch Linux distribution for resource-constrained systems (1.9GB+ RAM). Features adaptive GPU rendering (auto-switches between hardware acceleration and software fallback), ZRAM with zstd compression, audio quality auto-detection up to 192kHz/32-bit, USB persistence with dynamic space allocation, and Sway Wayland compositor at ~67MB RAM footprint.
+AI-orchestrated Arch Linux distribution for resource-constrained systems (1.9GB+ RAM). Features adaptive GPU rendering (auto-switches between hardware acceleration and software fallback), ZRAM with zstd compression, audio quality auto-detection up to 192kHz/32-bit, USB persistence with dynamic space allocation, and Sway Wayland compositor at ~67MB RAM footprint. Automated ISO builds via GitHub Actions.
 
-`Shell` `Python` `Arch Linux` `Wayland` `PipeWire`
+`Shell` `Python` `Arch Linux` `Wayland` `GitHub Actions`
 
 </td>
 <td width="50%" valign="top">
 
 #### [Fractal-Mind](https://github.com/madkoding/fractalmind)
-AI cognitive engine with evolutionary memory built on RAPTOR-based fractal graph structures and HNSW vector indexing over SurrealDB. Dual-phase architecture: **Vigilia** (wakefulness) for real-time response via graph navigation, **REM** (sleep) for asynchronous learning and memory consolidation. Multi-user namespace isolation, PDF/OCR ingestion, multi-embedding support (Nomic, BGE, CLIP).
+AI cognitive engine with evolutionary memory built on RAPTOR-based fractal graph structures and HNSW vector indexing over SurrealDB. Dual-phase architecture: **Vigilia** (wakefulness) for real-time response via graph navigation, **REM** (sleep) for asynchronous learning and memory consolidation. Multi-user namespace isolation, PDF/OCR ingestion, multi-embedding support (Nomic, BGE, CLIP). Full roadmap delivered — 12/12 features complete.
 
-`Rust` `SurrealDB` `RAG` `LLM` `Vector Embeddings`
+`Rust` `Axum` `SurrealDB` `Tauri` `Vector Embeddings`
 
 </td>
 </tr>
@@ -51,7 +53,7 @@ AI cognitive engine with evolutionary memory built on RAPTOR-based fractal graph
 <td width="50%" valign="top">
 
 #### [Neuro Agent](https://github.com/madkoding/neuro-agent)
-AI programming assistant in Rust with dual-model orchestration — routes tasks between fast local models (Ollama) and heavy compute providers (OpenAI, Anthropic, Groq) through a unified provider abstraction. Features AST-based code review with cyclomatic complexity detection, LRU context caching (10x response improvement), smart error recovery with retry/rollback, and a performance benchmarking framework with regression detection. 46+ test cases.
+AI programming assistant in Rust with dual-model orchestration — routes tasks between fast local models (Ollama) and heavy compute providers (OpenAI, Anthropic, Groq) through a unified provider abstraction. Features AST-based code review with cyclomatic complexity detection, LRU context caching (10x response improvement), smart error recovery with retry/rollback, and a performance benchmarking framework with regression detection. 219+ tests, 100% pass rate.
 
 `Rust` `Ollama` `Anthropic` `OpenAI` `ratatui`
 
@@ -148,7 +150,15 @@ Production-ready Docker environment for SlimeVR full-body tracking server with d
 </p>
 
 <p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=madkoding&theme=material-palenight&hide_border=true&background=00000000" />
+</p>
+
+<p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=madkoding&theme=material_palenight" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=madkoding&theme=algolia&no-frame=true&column=4&margin-w=15&margin-h=15" />
 </p>
 
 ---
