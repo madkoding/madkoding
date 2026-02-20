@@ -58,6 +58,7 @@ AI cognitive engine with evolutionary memory built on RAPTOR-based fractal graph
 <td width="50%" valign="top">
 
 #### [Neuro Agent](https://github.com/madkoding/neuro-agent)
+[![CI](https://img.shields.io/github/actions/workflow/status/madkoding/neuro-agent/ci.yml?label=CI)](https://github.com/madkoding/neuro-agent/actions)
 
 <img src="./profile/projects/neuro-agent.svg" width="100%" alt="Neuro Agent - AI Programming Assistant with Dual-Model Orchestration"/>
 
