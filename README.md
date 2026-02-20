@@ -70,6 +70,7 @@ AI programming assistant in Rust with dual-model orchestration — routes tasks 
 <td width="50%" valign="top">
 
 #### [Git Reports](https://github.com/madkoding/git-reports)
+[![CI](https://img.shields.io/github/actions/workflow/status/madkoding/git-reports/ci.yml?label=CI)](https://github.com/madkoding/git-reports/actions)
 
 <img src="./profile/projects/git-reports.svg" width="100%" alt="Git Reports - Automated Git Analytics Engine"/>
 
