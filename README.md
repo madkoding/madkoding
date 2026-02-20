@@ -7,7 +7,6 @@
 
 <p align="center">
   <a href="https://github.com/madkoding"><img src="https://img.shields.io/github/followers/madkoding?label=Followers&style=flat&color=555" alt="GitHub followers"/></a>
-  <img src="https://komarev.com/ghpvc/?username=madkoding&color=555&style=flat&label=Profile+views"/>
 </p>
 
 ---
