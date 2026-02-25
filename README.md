@@ -184,4 +184,4 @@ Production-ready Docker environment for SlimeVR full-body tracking server with d
 </p>
 
 <!-- AUTO-UPDATE-DATE -->
-**Última actualización:** 2026-02-25 17:11:49 -03
+**Última actualización:** 2026-02-25 18:12:05 -03
