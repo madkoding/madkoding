@@ -1,7 +1,7 @@
 <h1 align="center">madKoding</h1>
 
 <p align="center">
-  <strong>Software Engineer — AI Systems, Systems Programming & Full Stack</strong><br/>
+  <strong>Senior Software Engineer — AI Systems & Infrastructure</strong><br/>
   Chile
 </p>
 
@@ -13,17 +13,17 @@
 
 ### About
 
-Software engineer focused on **AI systems**, **systems-level programming in Rust**, and **full-stack development**. I design and build end-to-end solutions — from custom Linux distributions and embedded firmware to LLM orchestration engines and real-time web applications.
+Senior software engineer specializing in **AI systems**, **systems programming**, and **distributed infrastructure**. I architect and deliver production-grade solutions spanning the entire stack — from kernel-level optimizations and embedded firmware to large language model orchestration engines and real-time web platforms.
 
-Currently building the **NEURO ecosystem**: an interconnected platform where [madOS](https://github.com/madkoding/mad-os) provides the AI-integrated OS layer, [Fractal-Mind](https://github.com/madkoding/fractalmind) serves as the cognitive memory engine, [Neuro Agent](https://github.com/madkoding/neuro-agent) orchestrates multi-model AI workflows, and [neuro-ollama](https://github.com/madkoding/neuro-ollama) manages GPU-accelerated local inference.
+Currently leading the **NEURO ecosystem**: a cohesive platform where [madOS](https://github.com/madkoding/mad-os) delivers AI-integrated OS infrastructure, [Fractal-Mind](https://github.com/madkoding/fractalmind) provides cognitive memory architectures, [Neuro Agent](https://github.com/madkoding/neuro-agent) orchestrates multi-model AI workflows, and [neuro-ollama](https://github.com/madkoding/neuro-ollama) enables GPU-accelerated local inference.
 
-My work spans the full depth of the stack:
+**Core Competencies:**
 
-- **AI & Knowledge Systems** — RAG pipelines, LLM orchestration with multi-provider abstraction, vector embeddings, fractal graph-based memory architectures
-- **Systems Programming** — Custom OS builds with adaptive hardware detection, kernel tuning, ZRAM compression, Wayland compositing
-- **Full Stack** — React/Next.js frontends, Node.js/Express backends, REST APIs with JWT auth, real-time systems with WebSocket
-- **Infrastructure & DevOps** — Docker multi-service architectures, GitHub Actions CI/CD, GPU-accelerated containerized inference
-- **Embedded & IoT** — ESP32 firmware, VR tracking systems (SlimeVR), nRF52 BLE bootloaders, Android native (Kotlin)
+- **AI & Knowledge Engineering** — Multi-provider LLM orchestration, RAG pipelines, vector indexing (HNSW), fractal graph embeddings, cognitive memory systems
+- **Systems Programming** — Custom Linux distributions, kernel tuning, hardware abstraction layers, Wayland compositing, memory optimization (ZRAM/zstd)
+- **Backend & APIs** — High-performance Rust services (Axum), distributed architectures, REST/GraphQL APIs, real-time WebSocket systems
+- **Infrastructure & DevOps** — Docker multi-service deployments, GitHub Actions CI/CD, GPU-accelerated containerization, automated ISO builds
+- **Embedded & Firmware** — ESP32 IoT systems, VR/AR tracking (SlimeVR), nRF52 BLE bootloaders, Android native development
 
 ---
 
@@ -37,7 +37,7 @@ My work spans the full depth of the stack:
 
 <img src="./profile/projects/mados.svg" width="100%" alt="madOS - AI-Orchestrated Arch Linux Distribution"/>
 
-AI-orchestrated Arch Linux distribution for resource-constrained systems (1.9GB+ RAM). Features adaptive GPU rendering (auto-switches between hardware acceleration and software fallback), ZRAM with zstd compression, audio quality auto-detection up to 192kHz/32-bit, USB persistence with dynamic space allocation, and Sway Wayland compositor at ~67MB RAM footprint. Automated ISO builds via GitHub Actions.
+AI-orchestrated Arch Linux distribution optimized for resource-constrained environments (1.9GB+ RAM). Delivers adaptive GPU rendering with hardware acceleration fallback, ZRAM compression (zstd), high-fidelity audio support (192kHz/32-bit), and Sway Wayland compositor at ~67MB RAM. Fully automated ISO generation via GitHub Actions.
 
 `Shell` `Python` `Arch Linux` `Wayland` `GitHub Actions`
 
@@ -48,7 +48,7 @@ AI-orchestrated Arch Linux distribution for resource-constrained systems (1.9GB+
 
 <img src="./profile/projects/fractalmind.svg" width="100%" alt="Fractal-Mind - AI Cognitive Engine with Evolutionary Memory"/>
 
-AI cognitive engine with evolutionary memory built on RAPTOR-based fractal graph structures and HNSW vector indexing over SurrealDB. Dual-phase architecture: **Vigilia** (wakefulness) for real-time response via graph navigation, **REM** (sleep) for asynchronous learning and memory consolidation. Multi-user namespace isolation, PDF/OCR ingestion, multi-embedding support (Nomic, BGE, CLIP). Full roadmap delivered — 12/12 features complete.
+Production cognitive engine implementing RAPTOR-based fractal graphs with HNSW vector indexing over SurrealDB. Dual-phase architecture: **Vigilia** (real-time graph traversal) and **REM** (asynchronous consolidation). Features multi-user namespace isolation, multi-format ingestion (PDF/OCR), and multi-embedding support (Nomic, BGE, CLIP). Complete delivery — 12/12 roadmap features shipped.
 
 `Rust` `Axum` `SurrealDB` `Tauri` `Vector Embeddings`
 
@@ -62,7 +62,7 @@ AI cognitive engine with evolutionary memory built on RAPTOR-based fractal graph
 
 <img src="./profile/projects/neuro-agent.svg" width="100%" alt="Neuro Agent - AI Programming Assistant with Dual-Model Orchestration"/>
 
-AI programming assistant in Rust with dual-model orchestration — routes tasks between fast local models (Ollama) and heavy compute providers (OpenAI, Anthropic, Groq) through a unified provider abstraction. Features AST-based code review with cyclomatic complexity detection, LRU context caching (10x response improvement), smart error recovery with retry/rollback, and a performance benchmarking framework with regression detection. 219+ tests, 100% pass rate.
+Enterprise-grade AI programming assistant in Rust with intelligent multi-provider routing (Ollama, OpenAI, Anthropic, Groq). Implements AST-based code review with cyclomatic complexity analysis, LRU context caching (10× latency reduction), automatic error recovery with rollback, and comprehensive benchmarking suite with regression detection. 219+ tests, 100% pass rate.
 
 `Rust` `Ollama` `Anthropic` `OpenAI` `ratatui`
 
@@ -74,7 +74,7 @@ AI programming assistant in Rust with dual-model orchestration — routes tasks 
 
 <img src="./profile/projects/git-reports.svg" width="100%" alt="Git Reports - Automated Git Analytics Engine"/>
 
-Automated Git analytics engine in Rust that generates work summaries from repository activity. Analyzes commits, contributors, and activity patterns across time periods with multi-format export. Integrates LLM-powered report generation for natural language summaries. CI/CD with GitHub Actions and 100% passing test coverage.
+Automated Git intelligence engine in Rust that synthesizes work summaries from repository activity. Processes commits, contributor patterns, and temporal trends with configurable time windows and multi-format export. LLM-powered natural language generation for executive summaries. Full CI/CD pipeline with comprehensive test coverage.
 
 `Rust` `Git` `LLM` `GitHub Actions` `CI/CD`
 
@@ -83,24 +83,24 @@ Automated Git analytics engine in Rust that generates work summaries from reposi
 <tr>
 <td width="50%" valign="top">
 
-#### [MMORPGVT](https://github.com/madkoding/mmorpgvt)
-
-<img src="./profile/projects/mmorpgvt.svg" width="100%" alt="MMORPGVT - Real-time Interactive MMORPG for Twitch"/>
-
-Real-time interactive MMORPG engine for Twitch VTuber streams. Chat-driven mechanics: battles, exploration, virtual economy, and collaborative quests — all triggered from viewer commands. Built with Next.js and Firebase for real-time state sync. Full test suite with Jest, ESLint, Prettier, and automated formatting.
-
-`TypeScript` `Next.js` `Firebase` `Jest` `Twitch API`
-
-</td>
-<td width="50%" valign="top">
-
 #### [Docker SlimeVR](https://github.com/madkoding/docker-slimevr-web-server)
 
 <img src="./profile/projects/docker-slimevr.svg" width="100%" alt="Docker SlimeVR - Production-Ready Docker for VR Tracking"/>
 
-Production-ready Docker environment for SlimeVR full-body tracking server with dynamic Web GUI. Auto-downloads server JAR and GUI assets from GitHub releases, serves via Nginx with LAN IP auto-redirect. Exposes tracker (UDP 6969), WebSocket bridge, OSC router, VMC, and VRC ports. Persistent volume management for config and GUI assets.
+Production Docker environment for SlimeVR full-body tracking deployment with auto-provisioning Web GUI. Dynamically fetches server JAR and GUI assets from GitHub releases, serves via Nginx with LAN autodiscovery. Exposes complete VR tracking stack: UDP trackers (6969), WebSocket bridge, OSC routing, VMC protocol, and VRC integration. Persistent volume management for configuration and assets.
 
 `Docker` `Nginx` `SlimeVR` `VR` `Networking`
+
+</td>
+<td width="50%" valign="top">
+
+#### [Nerv Clock](https://github.com/madkoding/nerv-clock)
+
+<img src="./profile/projects/nerv-clock.svg" width="100%" alt="Nerv Clock - Real-time Streaming Overlay"/>
+
+Professional streaming overlay system for content creators. Delivers real-time interactive widgets, alerts, and viewer engagement tools with sub-second latency. Built on modern web stack with optimized rendering pipeline.
+
+`TypeScript` `React` `WebSocket` `OBS` `Streaming`
 
 </td>
 </tr>
@@ -184,4 +184,4 @@ Production-ready Docker environment for SlimeVR full-body tracking server with d
 </p>
 
 <!-- AUTO-UPDATE-DATE -->
-**Última actualización:** 2026-02-26 15:51:07 -03
+**Última actualización:** 2026-03-07
