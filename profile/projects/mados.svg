@@ -16,28 +16,50 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <filter id="neon-glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#27c93f" flood-opacity="0.6"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
   <!-- Background -->
   <rect width="800" height="320" rx="12" fill="url(#bg)"/>
 
-  <!-- Grid pattern -->
+  <!-- Animated grid pattern -->
   <g opacity="0.05" stroke="#ffffff" stroke-width="0.5">
-    <line x1="0" y1="40" x2="800" y2="40"/>
-    <line x1="0" y1="80" x2="800" y2="80"/>
+    <line x1="0" y1="40" x2="800" y2="40">
+      <animate attributeName="opacity" values="0.05;0.1;0.05" dur="4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="80" x2="800" y2="80">
+      <animate attributeName="opacity" values="0.05;0.1;0.05" dur="4.5s" repeatCount="indefinite"/>
+    </line>
     <line x1="0" y1="120" x2="800" y2="120"/>
     <line x1="0" y1="160" x2="800" y2="160"/>
-    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="200" x2="800" y2="200">
+      <animate attributeName="opacity" values="0.05;0.1;0.05" dur="5s" repeatCount="indefinite"/>
+    </line>
     <line x1="0" y1="240" x2="800" y2="240"/>
     <line x1="0" y1="280" x2="800" y2="280"/>
     <line x1="100" y1="0" x2="100" y2="320"/>
     <line x1="200" y1="0" x2="200" y2="320"/>
     <line x1="300" y1="0" x2="300" y2="320"/>
-    <line x1="400" y1="0" x2="400" y2="320"/>
+    <line x1="400" y1="0" x2="400" y2="320">
+      <animate attributeName="opacity" values="0.05;0.1;0.05" dur="3.5s" repeatCount="indefinite"/>
+    </line>
     <line x1="500" y1="0" x2="500" y2="320"/>
     <line x1="600" y1="0" x2="600" y2="320"/>
     <line x1="700" y1="0" x2="700" y2="320"/>
   </g>
+
+  <!-- Scanning line -->
+  <rect x="40" width="340" height="2" fill="#27c93f" opacity="0.3">
+    <animate attributeName="y" values="30;290;30" dur="8s" repeatCount="indefinite"/>
+  </rect>
 
   <!-- Terminal window -->
   <rect x="40" y="30" width="340" height="260" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
@@ -46,7 +68,9 @@
   <rect x="40" y="54" width="340" height="8" fill="#161b22"/>
   <circle cx="60" cy="46" r="5" fill="#ff5f56"/>
   <circle cx="78" cy="46" r="5" fill="#ffbd2e"/>
-  <circle cx="96" cy="46" r="5" fill="#27c93f"/>
+  <circle cx="96" cy="46" r="5" fill="#27c93f">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
   <text x="200" y="50" font-family="monospace" font-size="11" fill="#8b949e" text-anchor="middle">madOS — bash</text>
 
   <!-- Terminal content -->
@@ -63,7 +87,7 @@
   <text x="160" y="126" font-family="monospace" font-size="10" fill="#8b949e">RAM:</text>
   <text x="190" y="126" font-family="monospace" font-size="10" fill="#c9d1d9">~67MB (Sway)</text>
   <text x="160" y="142" font-family="monospace" font-size="10" fill="#8b949e">GPU:</text>
-  <text x="190" y="142" font-family="monospace" font-size="10" fill="#c9d1d9">Adaptive Render</text>
+  <text x="190" y="142" font-family="monospace" font-size="10" fill="#27c93f" filter="url(#neon-glow)">Adaptive Render</text>
   <text x="160" y="158" font-family="monospace" font-size="10" fill="#8b949e">ZRAM:</text>
   <text x="200" y="158" font-family="monospace" font-size="10" fill="#c9d1d9">zstd compress</text>
 
@@ -76,6 +100,11 @@
   <text x="70" y="250" font-family="monospace" font-size="12" fill="#c9d1d9">audio --detect</text>
   <text x="55" y="270" font-family="monospace" font-size="10" fill="#e94560">►</text>
   <text x="68" y="270" font-family="monospace" font-size="10" fill="#c9d1d9">192kHz/32-bit detected</text>
+
+  <!-- Typing cursor animation -->
+  <rect x="150" y="258" width="8" height="14" fill="#27c93f" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="1s" repeatCount="indefinite"/>
+  </rect>
 
   <!-- Right side content -->
   <text x="440" y="70" font-family="sans-serif" font-size="36" font-weight="bold" fill="#ffffff" filter="url(#glow)">madOS</text>
@@ -100,6 +129,9 @@
   <g transform="translate(600, 198)">
     <rect width="150" height="28" rx="14" fill="#1a1a2e" stroke="#27c93f" stroke-width="1"/>
     <text x="75" y="18" font-family="monospace" font-size="11" fill="#27c93f" text-anchor="middle">ZRAM zstd</text>
+    <rect width="150" height="28" rx="14" fill="none" stroke="#27c93f" stroke-width="1" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+    </rect>
   </g>
 
   <!-- Tech badges -->
