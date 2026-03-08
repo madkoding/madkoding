@@ -7,6 +7,7 @@
 
 <p align="center">
   <a href="https://github.com/madkoding"><img src="https://img.shields.io/github/followers/madkoding?label=Followers&style=flat&color=555" alt="GitHub followers"/></a>
+  <a href="https://github.com/madkoding?tab=stars"><img src="https://img.shields.io/github/stars/madkoding?direction=desc&sort=total&label=Total%20Stars&style=flat&color=555" alt="Total stars"/></a>
 </p>
 
 ---
@@ -34,6 +35,7 @@ Currently leading the **NEURO ecosystem**: a cohesive platform where [madOS](htt
 <td width="50%" valign="top">
 
 #### [madOS](https://github.com/madkoding/mad-os)
+[![ISO Build](https://img.shields.io/github/actions/workflow/status/madkoding/mad-os/iso.yml?label=ISO%20Build)](https://github.com/madkoding/mad-os/actions)
 
 <img src="./profile/projects/mados.svg" width="100%" alt="madOS - AI-Orchestrated Arch Linux Distribution"/>
 
@@ -45,6 +47,7 @@ AI-orchestrated Arch Linux distribution optimized for resource-constrained envir
 <td width="50%" valign="top">
 
 #### [Fractal-Mind](https://github.com/madkoding/fractalmind)
+[![CI](https://img.shields.io/github/actions/workflow/status/madkoding/fractalmind/ci.yml?label=CI)](https://github.com/madkoding/fractalmind/actions)
 
 <img src="./profile/projects/fractalmind.svg" width="100%" alt="Fractal-Mind - AI Cognitive Engine with Evolutionary Memory"/>
 
@@ -83,24 +86,24 @@ Automated Git intelligence engine in Rust that synthesizes work summaries from r
 <tr>
 <td width="50%" valign="top">
 
-#### [Docker SlimeVR](https://github.com/madkoding/docker-slimevr-web-server)
+#### [SopaipillaPHP](https://github.com/madkoding/sopaipillaphp)
 
-<img src="./profile/projects/docker-slimevr.svg" width="100%" alt="Docker SlimeVR - Production-Ready Docker for VR Tracking"/>
+<img src="./profile/projects/sopaipilla-php.svg" width="100%" alt="SopaipillaPHP - Modern PHP 8 Micro-framework"/>
 
-Production Docker environment for SlimeVR full-body tracking deployment with auto-provisioning Web GUI. Dynamically fetches server JAR and GUI assets from GitHub releases, serves via Nginx with LAN autodiscovery. Exposes complete VR tracking stack: UDP trackers (6969), WebSocket bridge, OSC routing, VMC protocol, and VRC integration. Persistent volume management for configuration and assets.
+Lightweight PHP 8+ micro-framework for JSON APIs with zero dependencies. Features attribute-based routing, typed DTOs with validation, multi-database ORM (PostgreSQL/MySQL/SQLite), and security-first design. Built for modern PHP development without framework bloat.
 
-`Docker` `Nginx` `SlimeVR` `VR` `Networking`
+`PHP` `REST API` `ORM` `Type-Safe`
 
 </td>
 <td width="50%" valign="top">
 
-#### [Nerv Clock](https://github.com/madkoding/nerv-clock)
+#### [Venus Studios](https://github.com/madkoding/venusstudios)
 
-<img src="./profile/projects/nerv-clock.svg" width="100%" alt="Nerv Clock - Evangelion-Style Clock Widget"/>
+<img src="./profile/projects/venusstudios.svg" width="100%" alt="Venus Studios - Software Development Agency"/>
 
-Authentic Evangelion-style clock widget for desktop and Android. Faithful recreation of NERV headquarters interface with MAGI system indicators, transparent background, and always-on-top functionality. Available for Windows, macOS, Linux, and Android.
+Software development studio and digital design agency portfolio. Showcases projects, services, and technical capabilities across custom software, embedded systems, and AI solutions.
 
-`TypeScript` `Tauri` `Android` `Desktop Widget` `Evangelion`
+`Next.js` `TypeScript` `Web` `Agency`
 
 </td>
 </tr>
@@ -120,12 +123,11 @@ Authentic Evangelion-style clock widget for desktop and Android. Faithful recrea
 <br/>
 <a href="https://github.com/search?q=user%3Amadkoding+language%3Arust"><img alt="Rust" src="https://img.shields.io/badge/Rust-000000.svg?logo=rust&logoColor=white"></a>
 <a href="https://github.com/search?q=user%3Amadkoding+language%3AtypeScript"><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-007ACC.svg?logo=typescript&logoColor=white"></a>
+<a href="https://github.com/search?q=user%3Amadkoding+language%3Aswift"><img alt="Swift" src="https://img.shields.io/badge/Swift-F05138.svg?logo=swift&logoColor=white"></a>
 <a href="https://github.com/search?q=user%3Amadkoding+language%3Apython"><img alt="Python" src="https://img.shields.io/badge/Python-14354C.svg?logo=python&logoColor=white"></a>
-<a href="https://github.com/search?q=user%3Amadkoding+language%3Ajavascript"><img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?logo=javascript&logoColor=black"></a>
-<a href="https://github.com/search?q=user%3Amadkoding+language%3Abash"><img alt="Bash" src="https://img.shields.io/badge/Bash-121011.svg?logo=gnu-bash&logoColor=white"></a>
-<a href="https://github.com/search?q=user%3Amadkoding+language%3Acsharp"><img alt="C#" src="https://img.shields.io/badge/C%23-239120.svg?logo=csharp&logoColor=white"></a>
 <a href="https://github.com/search?q=user%3Amadkoding+language%3Akotlin"><img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-7F52FF.svg?logo=kotlin&logoColor=white"></a>
-<a href="https://github.com/search?q=user%3Amadkoding+language%3Asql"><img alt="SQL" src="https://custom-icon-badges.demolab.com/badge/SQL-025E8C.svg?logo=database&logoColor=white"></a>
+<a href="https://github.com/search?q=user%3Amadkoding+language%3Ac"><img alt="C" src="https://img.shields.io/badge/C-A8B9CC.svg?logo=c&logoColor=2B3945"></a>
+<a href="https://github.com/search?q=user%3Amadkoding+language%3Acpp"><img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C.svg?logo=c%2B%2B&logoColor=white"></a>
 
 </td>
 <td valign="top" width="33%">
@@ -135,9 +137,9 @@ Authentic Evangelion-style clock widget for desktop and Android. Faithful recrea
 <a href="#"><img alt="Ollama" src="https://img.shields.io/badge/Ollama-000000.svg?logo=ollama&logoColor=white"></a>
 <a href="#"><img alt="Anthropic" src="https://img.shields.io/badge/Anthropic-191919.svg?logo=anthropic&logoColor=white"></a>
 <a href="#"><img alt="OpenAI" src="https://img.shields.io/badge/OpenAI-412991.svg?logo=openai&logoColor=white"></a>
+<a href="#"><img alt="Groq" src="https://img.shields.io/badge/Groq-4A4A4A.svg?logo=groq&logoColor=white"></a>
 <a href="#"><img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED.svg?logo=docker&logoColor=white"></a>
 <a href="#"><img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2671E5.svg?logo=github%20actions&logoColor=white"></a>
-<a href="#"><img alt="Nginx" src="https://img.shields.io/badge/Nginx-009639.svg?logo=nginx&logoColor=white"></a>
 <a href="#"><img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624.svg?logo=linux&logoColor=black"></a>
 <a href="#"><img alt="Arch Linux" src="https://img.shields.io/badge/Arch%20Linux-1793D1.svg?logo=archlinux&logoColor=white"></a>
 
@@ -146,14 +148,13 @@ Authentic Evangelion-style clock widget for desktop and Android. Faithful recrea
 
 **Frameworks & Data**
 <br/>
+<a href="#"><img alt="Axum" src="https://img.shields.io/badge/Axum-000000.svg?logo=rust&logoColor=white"></a>
+<a href="#"><img alt="Tauri" src="https://img.shields.io/badge/Tauri-24C8D8.svg?logo=tauri&logoColor=white"></a>
 <a href="#"><img alt="React" src="https://img.shields.io/badge/React-61DAFB.svg?logo=react&logoColor=black"></a>
 <a href="#"><img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000.svg?logo=next.js&logoColor=white"></a>
-<a href="#"><img alt="Node.js" src="https://img.shields.io/badge/Node.js-43853D.svg?logo=node.js&logoColor=white"></a>
-<a href="#"><img alt="Axum" src="https://img.shields.io/badge/Axum-000000.svg?logo=rust&logoColor=white"></a>
 <a href="#"><img alt="SurrealDB" src="https://img.shields.io/badge/SurrealDB-FF00A0.svg?logo=surrealdb&logoColor=white"></a>
 <a href="#"><img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-316192.svg?logo=postgresql&logoColor=white"></a>
 <a href="#"><img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-47A248.svg?logo=mongodb&logoColor=white"></a>
-<a href="#"><img alt="Firebase" src="https://img.shields.io/badge/Firebase-FFCA28.svg?logo=firebase&logoColor=black"></a>
 
 </td>
 </tr>
@@ -164,24 +165,30 @@ Authentic Evangelion-style clock widget for desktop and Android. Faithful recrea
 ### Activity
 
 <p align="center">
-  <img height="50%" width="auto" src ="./profile/stats.svg">
-  <img height="50%" width="auto" src ="./profile/top-langs.svg">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=madkoding&theme=material_palenight&hide_border=true" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=madkoding&theme=material-palenight&hide_border=true&background=00000000" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=madkoding&theme=material_palenight&hide_border=true" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/languages?username=madkoding&theme=material_palenight&hide_border=true" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=madkoding&theme=material_palenight" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=madkoding&theme=material_palenight&hide_border=true" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=madkoding&theme=material_palenight&hide_border=true&utcOffset=-4" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=madkoding&theme=material-palenight&hide_border=true&background=00000000&fire=FF7979&currStreakLabel=FF7979" alt="Streak stats" />
 </p>
 
 ---
 
 <p align="center">
   <a href="https://x.com/madkoding"><img src="https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white" /></a>&nbsp;
-  <a href="https://github.com/madkoding"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/madkoding"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" /></a>&nbsp;
+  <a href="mailto:contact@madkoding.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" /></a>
 </p>
 
 <!-- AUTO-UPDATE-DATE -->
-**Última actualización:** 2026-03-07
+**Última actualización:** 2026-03-08
