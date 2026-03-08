@@ -89,11 +89,11 @@ Automated Git intelligence engine in Rust that synthesizes work summaries from r
 
 #### [Tachikoma](https://github.com/madkoding/tachikoma)
 
-<img src="./profile/projects/tachikoma-v2.svg" width="100%" alt="Tachikoma - Distributed Logging System in Rust"/>
+<img src="./profile/projects/tachikoma-v2.svg" width="100%" alt="Tachikoma - NEURO-OS AI Ecosystem"/>
 
-Distributed logging system in Rust with multi-service log aggregation. Implements advanced filtering, full-text search, and multi-format export (JSON, CSV, plain text). Built with Axum for high-performance async I/O, capable of ingesting and processing thousands of log events per second from distributed sources.
+NEURO-OS: Modular AI ecosystem combining GraphRAG memory, intelligent agents, and automatic model selection. Features SurrealDB for graph+vector storage with 11 relation types, multi-model routing (ministral-3b to qwen2.5-coder:14b), built-in tools (web search, command execution), and complete UI stack (React chat + admin dashboard + Z-Brain CLI).
 
-`Rust` `Axum` `Distributed Systems` `Logging` `Search`
+`Rust` `Axum` `GraphRAG` `SurrealDB` `AI Agents`
 
 </td>
 <td width="50%" valign="top">
