@@ -96,11 +96,11 @@ Production Docker environment for SlimeVR full-body tracking deployment with aut
 
 #### [Nerv Clock](https://github.com/madkoding/nerv-clock)
 
-<img src="./profile/projects/nerv-clock.svg" width="100%" alt="Nerv Clock - Real-time Streaming Overlay"/>
+<img src="./profile/projects/nerv-clock.svg" width="100%" alt="Nerv Clock - Evangelion-Style Clock Widget"/>
 
-Professional streaming overlay system for content creators. Delivers real-time interactive widgets, alerts, and viewer engagement tools with sub-second latency. Built on modern web stack with optimized rendering pipeline.
+Authentic Evangelion-style clock widget for desktop and Android. Faithful recreation of NERV headquarters interface with MAGI system indicators, transparent background, and always-on-top functionality. Available for Windows, macOS, Linux, and Android.
 
-`TypeScript` `React` `WebSocket` `OBS` `Streaming`
+`TypeScript` `Tauri` `Android` `Desktop Widget` `Evangelion`
 
 </td>
 </tr>
