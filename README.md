@@ -186,8 +186,7 @@ Software development studio and digital design agency portfolio. Showcases proje
 
 <p align="center">
   <a href="https://x.com/madkoding"><img src="https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white" /></a>&nbsp;
-  <a href="https://linkedin.com/in/madkoding"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" /></a>&nbsp;
-  <a href="mailto:contact@madkoding.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" /></a>
+  <a href="https://github.com/madkoding"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" /></a>
 </p>
 
 <!-- AUTO-UPDATE-DATE -->
