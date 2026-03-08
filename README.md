@@ -89,7 +89,7 @@ Automated Git intelligence engine in Rust that synthesizes work summaries from r
 
 #### [Tachikoma](https://github.com/madkoding/tachikoma)
 
-<img src="./profile/projects/tachikoma.svg" width="100%" alt="Tachikoma - Distributed Logging System in Rust"/>
+<img src="./profile/projects/tachikoma-v2.svg" width="100%" alt="Tachikoma - Distributed Logging System in Rust"/>
 
 Distributed logging system in Rust with multi-service log aggregation. Implements advanced filtering, full-text search, and multi-format export (JSON, CSV, plain text). Built with Axum for high-performance async I/O, capable of ingesting and processing thousands of log events per second from distributed sources.
 
@@ -100,7 +100,7 @@ Distributed logging system in Rust with multi-service log aggregation. Implement
 
 #### [ESP32 Android Auto WiFi](https://github.com/madkoding/esp32-android-auto-wifi)
 
-<img src="./profile/projects/esp32-android-auto.svg" width="100%" alt="ESP32 Android Auto WiFi - IoT Bridge"/>
+<img src="./profile/projects/esp32-android-auto-v2.svg" width="100%" alt="ESP32 Android Auto WiFi - IoT Bridge"/>
 
 IoT bridge for automatic WiFi connection on Android Auto using ESP32 microcontroller. Handles remote control and WiFi management as a hardware bridge between Android devices and vehicle infotainment systems. Demonstrates embedded systems expertise with resource-constrained hardware.
 
