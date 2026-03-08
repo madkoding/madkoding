@@ -35,7 +35,8 @@ Currently leading the **NEURO ecosystem**: a cohesive platform where [madOS](htt
 <td width="50%" valign="top">
 
 #### [madOS](https://github.com/madkoding/mad-os)
-[![ISO Build](https://img.shields.io/github/actions/workflow/status/madkoding/mad-os/iso.yml?label=ISO%20Build)](https://github.com/madkoding/mad-os/actions)
+[![CI/CD](https://img.shields.io/github/actions/workflow/status/madkoding/mad-os/ci-cd.yml?label=CI/CD)](https://github.com/madkoding/mad-os/actions)
+[![ISO Release](https://img.shields.io/github/actions/workflow/status/madkoding/mad-os/iso-release.yml?label=ISO%20Release)](https://github.com/madkoding/mad-os/actions)
 
 <img src="./profile/projects/mados.svg" width="100%" alt="madOS - AI-Orchestrated Arch Linux Distribution"/>
 
