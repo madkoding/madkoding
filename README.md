@@ -87,13 +87,13 @@ Automated Git intelligence engine in Rust that synthesizes work summaries from r
 <tr>
 <td width="50%" valign="top">
 
-#### [SopaipillaPHP](https://github.com/madkoding/sopaipillaphp)
+#### [Tachikoma](https://github.com/madkoding/tachikoma)
 
-<img src="./profile/projects/sopaipilla-php.svg" width="100%" alt="SopaipillaPHP - Modern PHP 8 Micro-framework"/>
+<img src="./profile/projects/tachikoma.svg" width="100%" alt="Tachikoma - Distributed Logging System in Rust"/>
 
-Lightweight PHP 8+ micro-framework for JSON APIs with zero dependencies. Features attribute-based routing, typed DTOs with validation, multi-database ORM (PostgreSQL/MySQL/SQLite), and security-first design. Built for modern PHP development without framework bloat.
+Distributed logging system in Rust with multi-service log aggregation. Implements advanced filtering, full-text search, and multi-format export (JSON, CSV, plain text). Built with Axum for high-performance async I/O, capable of ingesting and processing thousands of log events per second from distributed sources.
 
-`PHP` `REST API` `ORM` `Type-Safe`
+`Rust` `Axum` `Distributed Systems` `Logging` `Search`
 
 </td>
 <td width="50%" valign="top">
