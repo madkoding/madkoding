@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e17"/>
+      <stop offset="50%" style="stop-color:#111927"/>
+      <stop offset="100%" style="stop-color:#1a2332"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e04d39"/>
+      <stop offset="100%" style="stop-color:#b71c1c"/>
+    </linearGradient>
+    <linearGradient id="rust" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dea584"/>
+      <stop offset="100%" style="stop-color:#b7410e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="pulse-glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#e04d39" flood-opacity="0.4"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background with subtle grid animation -->
+  <rect width="800" height="320" rx="12" fill="url(#bg)"/>
+  <g opacity="0.03" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="40" x2="800" y2="40">
+      <animate attributeName="opacity" values="0.03;0.08;0.03" dur="5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="200" x2="800" y2="200">
+      <animate attributeName="opacity" values="0.03;0.08;0.03" dur="6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="280" x2="800" y2="280"/>
+    <line x1="100" y1="0" x2="100" y2="320"/>
+    <line x1="200" y1="0" x2="200" y2="320"/>
+    <line x1="300" y1="0" x2="300" y2="320"/>
+    <line x1="400" y1="0" x2="400" y2="320"/>
+    <line x1="500" y1="0" x2="500" y2="320"/>
+    <line x1="600" y1="0" x2="600" y2="320"/>
+    <line x1="700" y1="0" x2="700" y2="320"/>
+  </g>
+
+  <!-- Log stream lines -->
+  <g stroke="url(#accent)" stroke-width="1" opacity="0.6" fill="none">
+    <path d="M 50 80 L 150 80 L 160 90 L 250 90 L 260 100 L 350 100 L 360 110 L 450 110" stroke-dasharray="4,4">
+      <animate attributeName="stroke-dashoffset" from="20" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 50 120 L 140 120 L 150 110 L 240 110 L 250 100 L 340 100 L 350 90 L 440 90" stroke-dasharray="4,4">
+      <animate attributeName="stroke-dashoffset" from="20" to="0" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 50 160 L 160 160 L 170 170 L 260 170 L 270 180 L 360 180" stroke-dasharray="4,4">
+      <animate attributeName="stroke-dashoffset" from="20" to="0" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Log aggregation node (center) -->
+  <g transform="translate(420, 160)">
+    <rect x="-50" y="-50" width="100" height="100" rx="8" fill="#1a2332" stroke="url(#accent)" stroke-width="2" filter="url(#glow)">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Database icon -->
+    <ellipse cx="0" cy="-15" rx="25" ry="10" fill="none" stroke="url(#rust)" stroke-width="1.5"/>
+    <ellipse cx="0" cy="0" rx="25" ry="10" fill="none" stroke="url(#rust)" stroke-width="1.5"/>
+    <ellipse cx="0" cy="15" rx="25" ry="10" fill="none" stroke="url(#rust)" stroke-width="1.5"/>
+    <line x1="-25" y1="-15" x2="-25" y2="15" stroke="url(#rust)" stroke-width="1.5"/>
+    <line x1="25" y1="-15" x2="25" y2="15" stroke="url(#rust)" stroke-width="1.5"/>
+    
+    <!-- Animated dots -->
+    <circle cx="0" cy="-15" r="3" fill="#e04d39" opacity="0.8">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-10" cy="0" r="3" fill="#e04d39" opacity="0.8">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1s" repeatCount="indefinite" begin="0.2s"/>
+    </circle>
+    <circle cx="10" cy="0" r="3" fill="#e04d39" opacity="0.8">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1s" repeatCount="indefinite" begin="0.4s"/>
+    </circle>
+    <circle cx="0" cy="15" r="3" fill="#e04d39" opacity="0.8">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1s" repeatCount="indefinite" begin="0.6s"/>
+    </circle>
+  </g>
+
+  <!-- Output stream -->
+  <path d="M 470 160 L 550 160 L 560 150 L 650 150 M 470 160 L 550 160 L 560 170 L 650 170" stroke="url(#accent)" stroke-width="1.5" fill="none" opacity="0.7">
+    <animate attributeName="stroke-dashoffset" from="20" to="0" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Title -->
+  <text x="400" y="55" text-anchor="middle" fill="#ffffff" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="20" font-weight="bold" filter="url(#glow)">Tachikoma</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="78" text-anchor="middle" fill="#94a3b8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">Distributed Logging System</text>
+
+  <!-- Tech badges -->
+  <g transform="translate(400, 250)" text-anchor="middle">
+    <rect x="-140" y="-15" width="80" height="28" rx="6" fill="#1a2332" stroke="#dea584" stroke-width="1"/>
+    <text x="-100" y="4" fill="#dea584" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">Rust</text>
+    
+    <rect x="-50" y="-15" width="70" height="28" rx="6" fill="#1a2332" stroke="#e04d39" stroke-width="1"/>
+    <text x="-15" y="4" fill="#e04d39" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">Axum</text>
+    
+    <rect x="30" y="-15" width="90" height="28" rx="6" fill="#1a2332" stroke="#94a3b8" stroke-width="1"/>
+    <text x="75" y="4" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">Search</text>
+  </g>
+
+  <!-- Animated log pulses -->
+  <circle cx="150" cy="80" r="4" fill="#e04d39" opacity="0.8">
+    <animate attributeName="cx" from="50" to="450" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0.2" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="140" cy="120" r="4" fill="#e04d39" opacity="0.8">
+    <animate attributeName="cx" from="50" to="450" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0.2" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="160" cy="160" r="4" fill="#e04d39" opacity="0.8">
+    <animate attributeName="cx" from="50" to="450" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0.2" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>
