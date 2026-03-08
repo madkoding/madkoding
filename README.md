@@ -97,13 +97,13 @@ Lightweight PHP 8+ micro-framework for JSON APIs with zero dependencies. Feature
 </td>
 <td width="50%" valign="top">
 
-#### [Venus Studios](https://github.com/madkoding/venusstudios)
+#### [ESP32 Android Auto WiFi](https://github.com/madkoding/esp32-android-auto-wifi)
 
-<img src="./profile/projects/venusstudios.svg" width="100%" alt="Venus Studios - Software Development Agency"/>
+<img src="./profile/projects/esp32-android-auto.svg" width="100%" alt="ESP32 Android Auto WiFi - IoT Bridge"/>
 
-Software development studio and digital design agency portfolio. Showcases projects, services, and technical capabilities across custom software, embedded systems, and AI solutions.
+IoT bridge for automatic WiFi connection on Android Auto using ESP32 microcontroller. Handles remote control and WiFi management as a hardware bridge between Android devices and vehicle infotainment systems. Demonstrates embedded systems expertise with resource-constrained hardware.
 
-`Next.js` `TypeScript` `Web` `Agency`
+`C` `ESP32` `IoT` `Embedded` `WiFi`
 
 </td>
 </tr>
