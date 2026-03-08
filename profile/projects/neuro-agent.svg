@@ -20,98 +20,168 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <filter id="pulse-glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#f97316" flood-opacity="0.4"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
-  <!-- Background -->
+  <!-- Background with subtle grid animation -->
   <rect width="800" height="320" rx="12" fill="url(#bg)"/>
+  <g opacity="0.03" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="40" x2="800" y2="40">
+      <animate attributeName="opacity" values="0.03;0.08;0.03" dur="5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="120" x2="800" y2="120"/>
+    <line x1="0" y1="200" x2="800" y2="200">
+      <animate attributeName="opacity" values="0.03;0.08;0.03" dur="6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="280" x2="800" y2="280"/>
+    <line x1="100" y1="0" x2="100" y2="320"/>
+    <line x1="200" y1="0" x2="200" y2="320"/>
+    <line x1="300" y1="0" x2="300" y2="320"/>
+    <line x1="400" y1="0" x2="400" y2="320"/>
+    <line x1="500" y1="0" x2="500" y2="320"/>
+    <line x1="600" y1="0" x2="600" y2="320"/>
+    <line x1="700" y1="0" x2="700" y2="320"/>
+  </g>
 
   <!-- Orchestration flow diagram -->
-  <!-- Input node -->
-  <rect x="40" y="120" width="80" height="40" rx="8" fill="#111927" stroke="#58a6ff" stroke-width="1.5"/>
+  <!-- Input node with pulse -->
+  <rect x="40" y="120" width="80" height="40" rx="8" fill="#111927" stroke="#58a6ff" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </rect>
   <text x="80" y="144" font-family="monospace" font-size="11" fill="#58a6ff" text-anchor="middle">Task</text>
+
+  <!-- Animated data packet -->
+  <circle cx="40" cy="140" r="4" fill="#58a6ff" opacity="0.8">
+    <animateMotion dur="1.5s" repeatCount="indefinite" path="M 40,140 L 160,140"/>
+  </circle>
 
   <!-- Arrow -->
   <line x1="120" y1="140" x2="150" y2="140" stroke="#3d4450" stroke-width="1.5"/>
   <polygon points="150,135 160,140 150,145" fill="#3d4450"/>
 
-  <!-- Router node -->
-  <rect x="160" y="105" width="100" height="70" rx="10" fill="#111927" stroke="#f97316" stroke-width="2"/>
+  <!-- Router node with glow pulse -->
+  <rect x="160" y="105" width="100" height="70" rx="10" fill="#111927" stroke="#f97316" stroke-width="2" filter="url(#pulse-glow)">
+    <animate attributeName="stroke-width" values="2;3;2" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
   <text x="210" y="135" font-family="monospace" font-size="11" font-weight="bold" fill="#f97316" text-anchor="middle">Router</text>
   <text x="210" y="155" font-family="monospace" font-size="9" fill="#8b949e" text-anchor="middle">Dual-Model</text>
 
-  <!-- Top branch - Local -->
+  <!-- Top branch - Local with animated flow -->
   <line x1="260" y1="125" x2="290" y2="85" stroke="#27c93f" stroke-width="1.5"/>
   <polygon points="287,80 297,82 290,90" fill="#27c93f"/>
+  <circle cx="260" cy="125" r="4" fill="#27c93f" opacity="0.9">
+    <animateMotion dur="1.2s" repeatCount="indefinite" path="M 260,125 L 290,85"/>
+  </circle>
 
-  <rect x="290" y="60" width="100" height="50" rx="8" fill="#111927" stroke="#27c93f" stroke-width="1.2"/>
+  <rect x="290" y="60" width="100" height="50" rx="8" fill="#111927" stroke="#27c93f" stroke-width="1.2">
+    <animate attributeName="stroke-opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite"/>
+  </rect>
   <text x="340" y="82" font-family="monospace" font-size="10" fill="#27c93f" text-anchor="middle">Ollama</text>
   <text x="340" y="98" font-family="monospace" font-size="9" fill="#8b949e" text-anchor="middle">Fast / Local</text>
 
-  <!-- Bottom branch - Cloud -->
+  <!-- Bottom branch - Cloud with animated flow -->
   <line x1="260" y1="155" x2="290" y2="195" stroke="#a78bfa" stroke-width="1.5"/>
   <polygon points="287,200 297,198 290,190" fill="#a78bfa"/>
+  <circle cx="260" cy="155" r="4" fill="#a78bfa" opacity="0.9">
+    <animateMotion dur="1.8s" repeatCount="indefinite" path="M 260,155 L 290,195"/>
+  </circle>
 
-  <rect x="290" y="180" width="100" height="50" rx="8" fill="#111927" stroke="#a78bfa" stroke-width="1.2"/>
+  <rect x="290" y="180" width="100" height="50" rx="8" fill="#111927" stroke="#a78bfa" stroke-width="1.2">
+    <animate attributeName="stroke-opacity" values="1;0.6;1" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
   <text x="340" y="200" font-family="monospace" font-size="10" fill="#a78bfa" text-anchor="middle">Cloud APIs</text>
   <text x="340" y="216" font-family="monospace" font-size="9" fill="#8b949e" text-anchor="middle">Heavy Compute</text>
 
-  <!-- LRU Cache -->
-  <rect x="55" y="210" width="90" height="45" rx="6" fill="#111927" stroke="#ffbd2e" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- LRU Cache with rotating border -->
+  <rect x="55" y="210" width="90" height="45" rx="6" fill="#111927" stroke="#ffbd2e" stroke-width="1" stroke-dasharray="4,3">
+    <animateTransform attributeName="transform" type="rotate" from="0 100 232" to="360 100 232" dur="20s" repeatCount="indefinite"/>
+  </rect>
   <text x="100" y="230" font-family="monospace" font-size="9" fill="#ffbd2e" text-anchor="middle">LRU Cache</text>
   <text x="100" y="245" font-family="monospace" font-size="9" fill="#27c93f" text-anchor="middle">10x faster</text>
 
-  <!-- AST Review -->
-  <rect x="170" y="220" width="100" height="45" rx="6" fill="#111927" stroke="#ef4444" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- AST Review with pulsing border -->
+  <rect x="170" y="220" width="100" height="45" rx="6" fill="#111927" stroke="#ef4444" stroke-width="1" stroke-dasharray="4,3">
+    <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+  </rect>
   <text x="220" y="240" font-family="monospace" font-size="9" fill="#ef4444" text-anchor="middle">AST Review</text>
   <text x="220" y="255" font-family="monospace" font-size="9" fill="#8b949e" text-anchor="middle">Complexity ↓</text>
 
   <!-- Right side content -->
   <text x="450" y="65" font-family="sans-serif" font-size="34" font-weight="bold" fill="#ffffff" filter="url(#glow)">Neuro Agent</text>
-  <rect x="450" y="77" width="140" height="3" rx="1.5" fill="url(#accent)"/>
+  <rect x="450" y="77" width="140" height="3" rx="1.5" fill="url(#accent)">
+    <animate attributeName="width" values="140;160;140" dur="3s" repeatCount="indefinite"/>
+  </rect>
 
   <text x="450" y="108" font-family="sans-serif" font-size="14" fill="#8b949e">AI Programming Assistant</text>
   <text x="450" y="128" font-family="sans-serif" font-size="14" fill="#8b949e">with Dual-Model Orchestration</text>
 
-  <!-- Features list -->
+  <!-- Features list with staggered fade -->
   <g transform="translate(450, 148)">
-    <text x="0" y="0" font-family="monospace" font-size="11" fill="#f97316">▸</text>
+    <text x="0" y="0" font-family="monospace" font-size="11" fill="#f97316">
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" begin="0s" repeatCount="indefinite"/>
+    </text>
     <text x="14" y="0" font-family="monospace" font-size="11" fill="#c9d1d9">Multi-provider abstraction</text>
   </g>
   <g transform="translate(450, 168)">
-    <text x="0" y="0" font-family="monospace" font-size="11" fill="#f97316">▸</text>
+    <text x="0" y="0" font-family="monospace" font-size="11" fill="#f97316">
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </text>
     <text x="14" y="0" font-family="monospace" font-size="11" fill="#c9d1d9">AST code review + cyclomatic</text>
   </g>
   <g transform="translate(450, 188)">
-    <text x="0" y="0" font-family="monospace" font-size="11" fill="#f97316">▸</text>
+    <text x="0" y="0" font-family="monospace" font-size="11" fill="#f97316">
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </text>
     <text x="14" y="0" font-family="monospace" font-size="11" fill="#c9d1d9">Smart retry + rollback</text>
   </g>
   <g transform="translate(450, 208)">
-    <text x="0" y="0" font-family="monospace" font-size="11" fill="#f97316">▸</text>
+    <text x="0" y="0" font-family="monospace" font-size="11" fill="#f97316">
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+    </text>
     <text x="14" y="0" font-family="monospace" font-size="11" fill="#c9d1d9">Performance benchmarking</text>
   </g>
 
-  <!-- Test status -->
+  <!-- Test status with pulsing indicator -->
   <g transform="translate(450, 232)">
     <rect width="220" height="28" rx="6" fill="#0d1117" stroke="#27c93f" stroke-width="1"/>
-    <circle cx="16" cy="14" r="4" fill="#27c93f"/>
+    <circle cx="16" cy="14" r="4" fill="#27c93f">
+      <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.7;1" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
     <text x="28" y="18" font-family="monospace" font-size="11" fill="#27c93f">219+ tests — 100% pass rate</text>
   </g>
 
-  <!-- Tech badges -->
+  <!-- Tech badges with hover effect simulation -->
   <g transform="translate(450, 275)">
-    <rect width="48" height="22" rx="4" fill="#dea584" opacity="0.15"/>
+    <rect width="48" height="22" rx="4" fill="#dea584" opacity="0.15">
+      <animate attributeName="opacity" values="0.15;0.25;0.15" dur="4s" repeatCount="indefinite"/>
+    </rect>
     <text x="24" y="15" font-family="monospace" font-size="10" fill="#dea584" text-anchor="middle">Rust</text>
   </g>
   <g transform="translate(506, 275)">
-    <rect width="62" height="22" rx="4" fill="#ffffff" opacity="0.1"/>
+    <rect width="62" height="22" rx="4" fill="#ffffff" opacity="0.1">
+      <animate attributeName="opacity" values="0.1;0.2;0.1" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
     <text x="31" y="15" font-family="monospace" font-size="10" fill="#c9d1d9" text-anchor="middle">Ollama</text>
   </g>
   <g transform="translate(576, 275)">
-    <rect width="78" height="22" rx="4" fill="#191919" opacity="0.3"/>
+    <rect width="78" height="22" rx="4" fill="#191919" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.4;0.3" dur="5s" repeatCount="indefinite"/>
+    </rect>
     <text x="39" y="15" font-family="monospace" font-size="10" fill="#c9d1d9" text-anchor="middle">Anthropic</text>
   </g>
   <g transform="translate(662, 275)">
-    <rect width="68" height="22" rx="4" fill="#412991" opacity="0.2"/>
+    <rect width="68" height="22" rx="4" fill="#412991" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;0.3;0.2" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
     <text x="34" y="15" font-family="monospace" font-size="10" fill="#a78bfa" text-anchor="middle">OpenAI</text>
   </g>
 </svg>
