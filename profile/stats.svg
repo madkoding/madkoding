@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">madKoding's GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 21, Total Commits  (last year) : 3584, Total PRs: 117</desc>
+        <desc id="descId">Total Stars Earned: 21, Total Commits  (last year) : 3642, Total PRs: 136</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 91.20472379615107;
+        stroke-dashoffset: 88.02806311730905;
       }
     }
   
@@ -192,7 +192,7 @@
         x="219.01"
         y="12.5"
         data-testid="prs"
-      >117</text>
+      >136</text>
     </g>
   </g>
     </svg>
