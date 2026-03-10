@@ -2,6 +2,9 @@
 
 <p align="center">
   <a href="https://user-badge.committers.top/chile/madkoding"><img src="https://user-badge.committers.top/chile/madkoding.svg" alt="committers.top badge"/></a>
+  <a href="https://github.com/madkoding"><img src="https://img.shields.io/github/followers/madkoding?label=Followers&style=flat&color=555" alt="GitHub followers"/></a>
+  <a href="https://github.com/madkoding?tab=stars"><img src="https://img.shields.io/github/stars/madkoding?direction=desc&sort=total&label=Total%20Stars&style=flat&color=555" alt="Total stars"/></a>
+  <a href="https://www.madtrackers.com"><img src="https://img.shields.io/badge/madtrackers.com-000000?style=flat&color=555" alt="Website"/></a>
 </p>
 
 <p align="center">
@@ -10,8 +13,10 @@
 </p>
 
 <p align="center">
-  <a href="https://x.com/madkoding"><img src="https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white" /></a>&nbsp;
-  <a href="https://github.com/madkoding"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" /></a>
+  <a href="https://x.com/madkoding"><img src="https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white" /></a>
+  <a href="https://www.youtube.com/@madkoding"><img src="https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white" /></a>
+  <a href="https://twitch.tv/madkoding"><img src="https://img.shields.io/badge/Twitch-9146FF?style=flat&logo=twitch&logoColor=white" /></a>
+  <a href="https://discord.gg/madkoding"><img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white" /></a>
 </p>
 
 ---
