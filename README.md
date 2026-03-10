@@ -1,13 +1,17 @@
 <h1 align="center">madKoding</h1>
 
 <p align="center">
+  <a href="https://user-badge.committers.top/chile/madkoding"><img src="https://user-badge.committers.top/chile/madkoding.svg" alt="committers.top badge"/></a>
+</p>
+
+<p align="center">
   <strong>Senior Software Engineer — AI Systems & Infrastructure</strong><br/>
   Chile
 </p>
 
 <p align="center">
-  <a href="https://github.com/madkoding"><img src="https://img.shields.io/github/followers/madkoding?label=Followers&style=flat&color=555" alt="GitHub followers"/></a>
-  <a href="https://github.com/madkoding?tab=stars"><img src="https://img.shields.io/github/stars/madkoding?direction=desc&sort=total&label=Total%20Stars&style=flat&color=555" alt="Total stars"/></a>
+  <a href="https://x.com/madkoding"><img src="https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white" /></a>&nbsp;
+  <a href="https://github.com/madkoding"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" /></a>
 </p>
 
 ---
@@ -186,8 +190,7 @@ IoT bridge for automatic WiFi connection on Android Auto using ESP32 microcontro
 ---
 
 <p align="center">
-  <a href="https://x.com/madkoding"><img src="https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white" /></a>&nbsp;
-  <a href="https://github.com/madkoding"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" /></a>
+  <a href="https://x.com/madkoding"><img src="https://img.shields.io/badge/X-000000?style=flat&logo=x&logoColor=white" /></a>
 </p>
 
 <!-- AUTO-UPDATE-DATE -->
