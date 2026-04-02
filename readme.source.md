@@ -108,7 +108,7 @@
       {github?.user?.name || github?.user?.login || 'madkoding'}
     </div>
     <div style={{ display:'flex', fontSize:15, color:'rgba(200,190,255,0.85)', fontWeight:400, letterSpacing:'0.2px' }}>
-      Senior Software Engineer — AI Systems &amp; Infrastructure · Chile
+      Senior Software Engineer · AI Systems &amp; Infrastructure · VR/Maker Culture · Chile
     </div>
     <div style={{ display:'flex', gap:20, marginTop:4 }}>
       <div style={{ display:'flex', alignItems:'center', gap:5 }}>
@@ -160,9 +160,9 @@
 
 ### About
 
-Senior software engineer specializing in **AI systems**, **systems programming**, and **distributed infrastructure**. I architect and deliver production-grade solutions spanning the entire stack — from kernel-level optimizations and embedded firmware to large language model orchestration engines and real-time web platforms.
+Full-Stack Developer and Senior Software Engineer based in Chile, specializing in **AI systems**, **systems programming**, and **distributed infrastructure**. I architect production-grade solutions spanning the entire stack — from kernel-level optimizations and embedded firmware to LLM orchestration engines and real-time web platforms. Beyond engineering, I am also a **VTuber and content creator** focused on VR technology, full-body tracking, and software development on Twitch and TikTok.
 
-Currently leading the **NEURO ecosystem**: a cohesive platform where [madOS](https://github.com/madkoding/mad-os) delivers AI-integrated OS infrastructure, [Fractal-Mind](https://github.com/madkoding/fractalmind) provides cognitive memory architectures, [Neuro Agent](https://github.com/madkoding/neuro-agent) orchestrates multi-model AI workflows, and [neuro-ollama](https://github.com/madkoding/neuro-ollama) enables GPU-accelerated local inference.
+Currently leading the **NEURO ecosystem**: a cohesive platform where [madOS](https://github.com/madkoding/mad-os) delivers AI-integrated OS infrastructure, [Fractal-Mind](https://github.com/madkoding/fractalmind) provides cognitive memory architectures, [Neuro Agent](https://github.com/madkoding/neuro-agent) orchestrates multi-model AI workflows, and [neuro-ollama](https://github.com/madkoding/neuro-ollama) enables GPU-accelerated local inference. Also the creator of [madTrackers](https://madtrackers.com) — a hardware/software solution for full-body VR tracking (SlimeVR/VRChat).
 
 **Core Competencies:**
 
@@ -170,7 +170,31 @@ Currently leading the **NEURO ecosystem**: a cohesive platform where [madOS](htt
 - **Systems Programming** — Custom Linux distributions, kernel tuning, hardware abstraction layers, Wayland compositing, memory optimization (ZRAM/zstd)
 - **Backend & APIs** — High-performance Rust services (Axum), distributed architectures, REST/GraphQL APIs, real-time WebSocket systems
 - **Infrastructure & DevOps** — Docker multi-service deployments, GitHub Actions CI/CD, GPU-accelerated containerization, automated ISO builds
-- **Embedded & Firmware** — ESP32 IoT systems, VR/AR tracking (SlimeVR), nRF52 BLE bootloaders, Android native development
+- **Embedded & Firmware** — ESP32 IoT systems, VR/AR tracking (SlimeVR/madTrackers), nRF52 BLE bootloaders, Android native development
+
+```aura width=860 height=110
+<div style={{
+  width: '100%', height: '100%', background: '#08080c',
+  display: 'flex', alignItems: 'center', justifyContent: 'space-around',
+  fontFamily: 'Inter', borderRadius: 16,
+  border: '1px solid rgba(110,80,220,0.15)', padding: '0 40px', boxSizing: 'border-box',
+}}>
+  {[
+    { color: '#7c3aed', label: 'Open Source', sub: 'All major projects public, MIT licensed' },
+    { color: '#0ea5e9', label: 'Resource Efficient', sub: 'Built for constrained hardware' },
+    { color: '#10b981', label: 'Privacy-First', sub: 'Local AI — no cloud dependency' },
+    { color: '#f59e0b', label: 'VR & Maker Culture', sub: 'VTuber & content creator' },
+  ].map(function(item) {
+    return (
+      <div key={item.label} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, maxWidth: 185 }}>
+        <div style={{ width: 10, height: 10, borderRadius: 5, background: item.color }} />
+        <span style={{ fontSize: 13, fontWeight: 700, color: '#e0d8ff', textAlign: 'center' }}>{item.label}</span>
+        <span style={{ fontSize: 11, color: 'rgba(180,165,255,0.6)', textAlign: 'center', lineHeight: 1.4 }}>{item.sub}</span>
+      </div>
+    );
+  })}
+</div>
+```
 
 ---
 
