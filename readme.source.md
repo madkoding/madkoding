@@ -160,17 +160,18 @@
 
 ### About
 
-Full-Stack Developer and Senior Software Engineer based in Chile, specializing in **AI systems**, **systems programming**, and **distributed infrastructure**. I architect production-grade solutions spanning the entire stack — from kernel-level optimizations and embedded firmware to LLM orchestration engines and real-time web platforms. With 4,000+ GitHub contributions in the last year, I focus on **open-source, privacy-first tooling** built for constrained hardware — no cloud dependency, no bloat. Beyond engineering, I am also a **VTuber and content creator** focused on VR technology, full-body tracking, and software development on Twitch and TikTok.
+Full-stack software engineer based in Chile, building **autonomous AI agents**, **developer tooling** and **systems software** — from Go and Rust backends to React/TypeScript frontends, embedded firmware and a Linux distribution. I favor open-source, privacy-first software that runs on your own hardware: single static binaries, local models, no cloud lock-in.
 
-My open-source work spans several active projects: [madOS](https://github.com/madkoding/mad-os) is an Arch-based Linux distribution optimized for limited resources (~300MB–1.9GB RAM), with Sway/Hyprland Wayland compositors, native Ollama & OpenCode AI integration, ZRAM/zstd compression, and automated ISO builds via GitHub Actions. [Fractal-Mind](https://github.com/madkoding/fractalmind) is a cognitive memory engine built on RAPTOR-style fractal graph indexing and HNSW vector search over SurrealDB. [Neuro Agent](https://github.com/madkoding/neuro-agent) is a Rust-based AI assistant with intelligent multi-provider LLM routing (Ollama, OpenAI, Anthropic, Groq), AST-based code review, LRU context caching, and 219+ passing tests. [Tachikoma](https://github.com/madkoding/tachikoma) is a modular AI agent framework combining GraphRAG memory, multi-model routing, and integrated tooling including web search and command execution. Also the creator of [madTrackers](https://madtrackers.com) — a hardware/software solution for full-body VR tracking (SlimeVR/VRChat).
+Currently focused on [motita](https://github.com/madkoding/motita), an autonomous coding agent where a deterministic check — not the model — decides when the work is done. I also build production services (NestJS microservices, PostgreSQL, SSO integrations with Azure AD / SAML 2.0), and I work in Spanish and English. Beyond engineering, I am a **VTuber and content creator** focused on VR, full-body tracking and software development on Twitch and TikTok, and the creator of [madTrackers](https://www.madtrackers.com), a full-body VR tracking system (SlimeVR/VRChat).
 
 **Core Competencies:**
 
-- **AI & Knowledge Engineering** — Multi-provider LLM orchestration, RAG pipelines, vector indexing (HNSW), fractal graph embeddings, cognitive memory systems
-- **Systems Programming** — Custom Linux distributions, kernel tuning, hardware abstraction layers, Wayland compositing, memory optimization (ZRAM/zstd)
-- **Backend & APIs** — High-performance Rust services (Axum), distributed architectures, REST/GraphQL APIs, real-time WebSocket systems
-- **Infrastructure & DevOps** — Docker multi-service deployments, GitHub Actions CI/CD, GPU-accelerated containerization, automated ISO builds
-- **Embedded & Firmware** — ESP32 IoT systems, VR/AR tracking (SlimeVR/madTrackers), nRF52 BLE bootloaders, Android native development
+- **AI Agents & Tooling** — Autonomous coding agents with verifiable outcomes, multi-provider LLM routing, MCP tools, context compression, RAG and cognitive memory (RAPTOR, HNSW)
+- **Systems Programming** — Go and Rust single-binary software, terminal UIs, a custom Arch-based Linux distribution (archiso, Hyprland), kernel tuning
+- **Backend & Integrations** — Rust (Axum), Go, NestJS microservices, PostgreSQL, REST and WebSocket APIs, SSO (Azure AD / SAML 2.0)
+- **Frontend** — React, TypeScript, Preact, real-time web interfaces
+- **Infrastructure & DevOps** — Docker, GitHub Actions CI/CD, automated ISO builds
+- **Embedded & Hardware** — nRF52 / nRF54L firmware (Zephyr), ESP32 IoT, full-body VR tracking (madTrackers)
 
 ```aura width=860 height=110
 <div style={{
@@ -180,9 +181,9 @@ My open-source work spans several active projects: [madOS](https://github.com/ma
   border: '1px solid rgba(110,80,220,0.15)', padding: '0 40px', boxSizing: 'border-box',
 }}>
   {[
-    { color: '#7c3aed', label: 'Open Source', sub: 'All major projects public, MIT licensed' },
+    { color: '#7c3aed', label: 'Open Source', sub: 'Public projects under GPL, AGPL and MIT' },
     { color: '#0ea5e9', label: 'Resource Efficient', sub: 'Built for constrained hardware' },
-    { color: '#10b981', label: 'Privacy-First', sub: 'Local AI — no cloud dependency' },
+    { color: '#10b981', label: 'Privacy-First', sub: 'Local models and single static binaries' },
     { color: '#f59e0b', label: 'VR & Maker Culture', sub: 'VTuber & content creator' },
   ].map(function(item) {
     return (
@@ -204,15 +205,43 @@ My open-source work spans several active projects: [madOS](https://github.com/ma
 <tr>
 <td width="50%" valign="top">
 
-#### [madOS](https://github.com/madkoding/mad-os)
-[![CI/CD](https://img.shields.io/github/actions/workflow/status/madkoding/mad-os/ci-cd.yml?label=CI/CD)](https://github.com/madkoding/mad-os/actions)
-[![ISO Release](https://img.shields.io/github/actions/workflow/status/madkoding/mad-os/iso-release.yml?label=ISO%20Release)](https://github.com/madkoding/mad-os/actions)
+#### [motita](https://github.com/madkoding/motita)
+[![License](https://img.shields.io/github/license/madkoding/motita?label=License)](https://github.com/madkoding/motita)
+[![Last commit](https://img.shields.io/github/last-commit/madkoding/motita?label=Last%20commit)](https://github.com/madkoding/motita/commits)
+
+<img src="./profile/projects/motita.svg" width="100%" alt="motita - Autonomous coding agent in Go"/>
+
+Autonomous AI coding agent in pure Go. The model only proposes actions; a project-defined check (`go test`, `make check`, `cargo test`, `pytest`…) decides when a task is done, feeds the real error output back on failure, and stops honestly instead of claiming success. Parallel agents on isolated git worktrees, terminal and web UI, sessions with checkpoints, and a sandbox with guardrails that cannot be disabled. One static binary, standard library only, no cgo. Works with OpenAI, Anthropic, Gemini, Ollama, Qwen and OpenAI-compatible hosts. 3,700+ tests.
+
+`Go` `AI Agents` `Sandbox` `Git Worktrees` `TUI`
+
+</td>
+<td width="50%" valign="top">
+
+#### [madOS](https://github.com/madoslinux/mad-os)
+[![License](https://img.shields.io/github/license/madoslinux/mad-os?label=License)](https://github.com/madoslinux/mad-os)
+[![Last commit](https://img.shields.io/github/last-commit/madoslinux/mad-os?label=Last%20commit)](https://github.com/madoslinux/mad-os/commits)
 
 <img src="./profile/projects/mados.svg" width="100%" alt="madOS - AI-Orchestrated Arch Linux Distribution"/>
 
-AI-orchestrated Arch Linux distribution optimized for resource-constrained environments (1.9GB+ RAM). Delivers adaptive GPU rendering with hardware acceleration fallback, ZRAM compression (zstd), high-fidelity audio support (192kHz/32-bit), and Sway Wayland compositor at ~67MB RAM. Fully automated ISO generation via GitHub Actions.
+Arch Linux distribution built with archiso for modern hardware with GPU acceleration: Hyprland (Vulkan/OpenGL), NVIDIA/AMD/Intel drivers, CUDA toolkit, the OpenCode AI assistant integrated out of the box, and a GTK graphical installer. Built as a family of components — linux-zen kernel with the BORE scheduler, an OTA updater with Btrfs snapshots, a launcher and media apps — under the [madoslinux](https://github.com/madoslinux) organization.
 
-`Shell` `Python` `Arch Linux` `Wayland` `GitHub Actions`
+`Arch Linux` `Hyprland` `archiso` `GTK` `Btrfs`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### [CodeNexum](https://github.com/madkoding/codenexum)
+[![License](https://img.shields.io/github/license/madkoding/codenexum?label=License)](https://github.com/madkoding/codenexum)
+[![Last commit](https://img.shields.io/github/last-commit/madkoding/codenexum?label=Last%20commit)](https://github.com/madkoding/codenexum/commits)
+
+<img src="./profile/projects/codenexum.svg" width="100%" alt="CodeNexum - Code index and context compression for opencode"/>
+
+Code indexer and context compression engine for [opencode](https://opencode.ai). Replaces raw `read`, `grep`, `glob` and `bash` output with indexed chunks, semantic summaries and compressed logs (incremental FTS5 + BM25 over local SQLite), adds caller/callee impact analysis, and exposes 9 MCP tools. Includes a live dashboard and tray app. Reports 40–80% tool-output savings on mid-size projects.
+
+`TypeScript` `Electron` `React` `SQLite` `MCP`
 
 </td>
 <td width="50%" valign="top">
@@ -231,18 +260,6 @@ Production cognitive engine implementing RAPTOR-based fractal graphs with HNSW v
 <tr>
 <td width="50%" valign="top">
 
-#### [Neuro Agent](https://github.com/madkoding/neuro-agent)
-[![CI](https://img.shields.io/github/actions/workflow/status/madkoding/neuro-agent/ci.yml?label=CI)](https://github.com/madkoding/neuro-agent/actions)
-
-<img src="./profile/projects/neuro-agent.svg" width="100%" alt="Neuro Agent - AI Programming Assistant with Dual-Model Orchestration"/>
-
-Enterprise-grade AI programming assistant in Rust with intelligent multi-provider routing (Ollama, OpenAI, Anthropic, Groq). Implements AST-based code review with cyclomatic complexity analysis, LRU context caching (10× latency reduction), automatic error recovery with rollback, and comprehensive benchmarking suite with regression detection. 219+ tests, 100% pass rate.
-
-`Rust` `Ollama` `Anthropic` `OpenAI` `ratatui`
-
-</td>
-<td width="50%" valign="top">
-
 #### [Git Reports](https://github.com/madkoding/git-reports)
 [![CI](https://img.shields.io/github/actions/workflow/status/madkoding/git-reports/ci.yml?label=CI)](https://github.com/madkoding/git-reports/actions)
 
@@ -253,32 +270,28 @@ Automated Git intelligence engine in Rust that synthesizes work summaries from r
 `Rust` `Git` `LLM` `GitHub Actions` `CI/CD`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
-#### [Tachikoma](https://github.com/madkoding/tachikoma)
+#### [super-shell-tui](https://github.com/madkoding/super-shell-tui)
+[![Last commit](https://img.shields.io/github/last-commit/madkoding/super-shell-tui?label=Last%20commit)](https://github.com/madkoding/super-shell-tui/commits)
 
-<img src="./profile/projects/tachikoma-v2.svg" width="100%" alt="Tachikoma - AI Ecosystem with GraphRAG Memory"/>
+<img src="./profile/projects/super-shell-tui.svg" width="100%" alt="super-shell-tui - Tabbed and split-pane shells in the terminal"/>
 
-Tachikoma: Modular AI ecosystem combining GraphRAG memory, intelligent agents, and automatic model selection. Features SurrealDB for graph+vector storage with 11 relation types, multi-model routing (ministral-3b to qwen2.5-coder:14b), built-in tools (web search, command execution), and complete UI stack (React chat + admin dashboard + Z-Brain CLI).
+Terminal UI in Go (Bubble Tea) that embeds real interactive shells in tabs and split panes. Keys go straight to a PTY, so completion, history and reverse search behave like a normal terminal. Up to 9 tabs, zoom, 10,000-line scrollback with search, mouse support with OSC 52 copy, session restore, and a TOML config for keybindings and colors. Linux and macOS.
 
-`Rust` `Axum` `GraphRAG` `SurrealDB` `AI Agents`
-
-</td>
-<td width="50%" valign="top">
-
-#### [ESP32 Android Auto WiFi](https://github.com/madkoding/esp32-android-auto-wifi)
-
-<img src="./profile/projects/esp32-android-auto-v2.svg" width="100%" alt="ESP32 Android Auto WiFi - IoT Bridge"/>
-
-IoT bridge for automatic WiFi connection on Android Auto using ESP32 microcontroller. Handles remote control and WiFi management as a hardware bridge between Android devices and vehicle infotainment systems. Demonstrates embedded systems expertise with resource-constrained hardware.
-
-`C` `ESP32` `IoT` `Embedded` `WiFi`
+`Go` `Bubble Tea` `PTY` `TUI`
 
 </td>
 </tr>
 </table>
+
+### Also Building
+
+- [**madTrackers**](https://www.madtrackers.com) — Full-body VR tracking: tracker and receiver firmware (nRF52 / nRF54L, Zephyr), server and storefront.
+- [**Tachikoma**](https://github.com/madkoding/tachikoma) — Modular AI ecosystem with GraphRAG memory (SurrealDB), multi-model routing and built-in tools.
+- [**KodingVibes**](https://github.com/kodingvibes) — Developer community platform: SSO, real-time chat with WebRTC voice rooms, and microfrontends.
+- [**mmorpgvt**](https://github.com/madkoding/mmorpgvt) — Chat-driven MMORPG engine for VTuber Twitch streams.
+- [**ESP32 Android Auto WiFi**](https://github.com/madkoding/esp32-android-auto-wifi) — ESP32 bridge that connects Android Auto over WiFi automatically.
 
 > See all repositories at [github.com/madkoding?tab=repositories](https://github.com/madkoding?tab=repositories)
 
@@ -286,7 +299,7 @@ IoT bridge for automatic WiFi connection on Android Auto using ESP32 microcontro
 
 ### Tech Stack
 
-```aura width=860 height=280
+```aura width=860 height=360
 <div style={{
   width: '100%', height: '100%', background: '#08080c',
   display: 'flex', flexDirection: 'column', fontFamily: 'Inter',
@@ -306,17 +319,22 @@ IoT bridge for automatic WiFi connection on Android Auto using ESP32 microcontro
     {
       label: 'Languages',
       color: '#7c3aed',
-      items: ['Rust', 'TypeScript', 'Swift', 'Python', 'Kotlin', 'C', 'C++'],
+      items: ['Go', 'Rust', 'TypeScript', 'Python', 'C', 'C++', 'Kotlin', 'Swift'],
     },
     {
       label: 'AI & Infrastructure',
       color: '#0ea5e9',
-      items: ['Ollama', 'Anthropic', 'OpenAI', 'Groq', 'Docker', 'GitHub Actions', 'Linux', 'Arch Linux'],
+      items: ['Ollama', 'Anthropic', 'OpenAI', 'Gemini', 'MCP', 'Docker', 'GitHub Actions', 'Linux', 'Arch Linux'],
     },
     {
       label: 'Frameworks & Data',
       color: '#10b981',
-      items: ['Axum', 'Tauri', 'React', 'Next.js', 'SurrealDB', 'PostgreSQL', 'MongoDB'],
+      items: ['Axum', 'NestJS', 'React', 'Preact', 'Next.js', 'Tauri', 'SurrealDB', 'PostgreSQL', 'MongoDB'],
+    },
+    {
+      label: 'Embedded & Hardware',
+      color: '#f59e0b',
+      items: ['Zephyr', 'nRF52', 'nRF54L', 'ESP32', 'SlimeVR'],
     },
   ].map(function(group, gi) {
     return (
