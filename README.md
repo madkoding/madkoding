@@ -88,6 +88,7 @@ Code indexer and context compression engine for [opencode](https://opencode.ai).
 #### [Fractal-Mind](https://github.com/madkoding/fractalmind)
 
 [![CI](https://img.shields.io/github/actions/workflow/status/madkoding/fractalmind/ci.yml?label=CI)](https://github.com/madkoding/fractalmind/actions)
+[![License](https://img.shields.io/github/license/madkoding/fractalmind?label=License)](https://github.com/madkoding/fractalmind) [![Last commit](https://img.shields.io/github/last-commit/madkoding/fractalmind?label=Last%20commit)](https://github.com/madkoding/fractalmind/commits)
 
 <img src="./profile/projects/fractalmind.svg" width="100%" alt="Fractal-Mind - AI Cognitive Engine with Evolutionary Memory"/>
 
@@ -103,6 +104,7 @@ Production cognitive engine implementing RAPTOR-based fractal graphs with HNSW v
 #### [Git Reports](https://github.com/madkoding/git-reports)
 
 [![CI](https://img.shields.io/github/actions/workflow/status/madkoding/git-reports/ci.yml?label=CI)](https://github.com/madkoding/git-reports/actions)
+[![License](https://img.shields.io/github/license/madkoding/git-reports?label=License)](https://github.com/madkoding/git-reports) [![Last commit](https://img.shields.io/github/last-commit/madkoding/git-reports?label=Last%20commit)](https://github.com/madkoding/git-reports/commits)
 
 <img src="./profile/projects/git-reports.svg" width="100%" alt="Git Reports - Automated Git Analytics Engine"/>
 
@@ -115,7 +117,7 @@ Automated Git intelligence engine in Rust that synthesizes work summaries from r
 
 #### [super-shell-tui](https://github.com/madkoding/super-shell-tui)
 
-[![Last commit](https://img.shields.io/github/last-commit/madkoding/super-shell-tui?label=Last%20commit)](https://github.com/madkoding/super-shell-tui/commits)
+[![License](https://img.shields.io/github/license/madkoding/super-shell-tui?label=License)](https://github.com/madkoding/super-shell-tui) [![Last commit](https://img.shields.io/github/last-commit/madkoding/super-shell-tui?label=Last%20commit)](https://github.com/madkoding/super-shell-tui/commits)
 
 <img src="./profile/projects/super-shell-tui.svg" width="100%" alt="super-shell-tui - Tabbed and split-pane shells in the terminal"/>
 
@@ -131,9 +133,12 @@ Terminal UI in Go (Bubble Tea) that embeds real interactive shells in tabs and s
 
 * [**madTrackers**](https://www.madtrackers.com): Full-body VR tracking: tracker and receiver firmware (nRF52 / nRF54L, Zephyr), server and storefront.
 * [**Tachikoma**](https://github.com/madkoding/tachikoma): Modular AI ecosystem with GraphRAG memory (SurrealDB), multi-model routing and built-in tools.
+  [![License](https://img.shields.io/github/license/madkoding/tachikoma?label=License)](https://github.com/madkoding/tachikoma) [![Last commit](https://img.shields.io/github/last-commit/madkoding/tachikoma?label=Last%20commit)](https://github.com/madkoding/tachikoma/commits)
 * [**KodingVibes**](https://github.com/kodingvibes): Developer community platform: SSO, real-time chat with WebRTC voice rooms, and microfrontends.
 * [**mmorpgvt**](https://github.com/madkoding/mmorpgvt): Chat-driven MMORPG engine for VTuber Twitch streams.
+  [![License](https://img.shields.io/github/license/madkoding/mmorpgvt?label=License)](https://github.com/madkoding/mmorpgvt) [![Last commit](https://img.shields.io/github/last-commit/madkoding/mmorpgvt?label=Last%20commit)](https://github.com/madkoding/mmorpgvt/commits)
 * [**ESP32 Android Auto WiFi**](https://github.com/madkoding/esp32-android-auto-wifi): ESP32 bridge that connects Android Auto over WiFi automatically.
+  [![License](https://img.shields.io/github/license/madkoding/esp32-android-auto-wifi?label=License)](https://github.com/madkoding/esp32-android-auto-wifi) [![Last commit](https://img.shields.io/github/last-commit/madkoding/esp32-android-auto-wifi?label=Last%20commit)](https://github.com/madkoding/esp32-android-auto-wifi/commits)
 
 > See all repositories at [github.com/madkoding?tab=repositories](https://github.com/madkoding?tab=repositories)
 
