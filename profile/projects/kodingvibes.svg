@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320" viewBox="0 0 800 320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="50%" style="stop-color:#161b22"/>
+      <stop offset="100%" style="stop-color:#1c2333"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#8b949e"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="320" rx="12" fill="url(#bg)"/>
+  <rect x="0" y="0" width="800" height="4" rx="2" fill="url(#accent)"/>
+
+  <text x="40" y="58" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#e6edf3">KodingVibes</text>
+  <text x="40" y="84" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" fill="#8b949e">Developer community platform with real-time chat and voice.</text>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="600">
+    <rect x="40" y="130" width="170" height="64" rx="10" fill="#0d1117" stroke="#30363d"/>
+    <text x="125" y="157" text-anchor="middle" fill="#e6edf3">SSO</text>
+    <text x="125" y="177" text-anchor="middle" font-size="11" font-weight="400" fill="#8b949e">single sign-on</text>
+    <rect x="315" y="130" width="170" height="64" rx="10" fill="#0d1117" stroke="#a78bfa"/>
+    <text x="400" y="157" text-anchor="middle" fill="#a78bfa">Microfrontends</text>
+    <text x="400" y="177" text-anchor="middle" font-size="11" font-weight="400" fill="#8b949e">independent modules</text>
+    <rect x="590" y="130" width="170" height="64" rx="10" fill="#0d1117" stroke="#30363d"/>
+    <text x="675" y="157" text-anchor="middle" fill="#e6edf3">Realtime</text>
+    <text x="675" y="177" text-anchor="middle" font-size="11" font-weight="400" fill="#8b949e">chat + WebRTC voice rooms</text>
+  </g>
+  <line x1="210" y1="162" x2="312" y2="162" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="485" y1="162" x2="587" y2="162" stroke="#8b949e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <text x="40" y="296" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#8b949e">Microfrontends  ·  SSO  ·  WebSocket chat  ·  WebRTC voice rooms</text>
+</svg>

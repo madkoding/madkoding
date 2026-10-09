@@ -199,7 +199,7 @@ Currently focused on [motita](https://github.com/madkoding/motita), an autonomou
 
 ---
 
-### Featured Projects
+### Projects
 
 <table>
 <tr>
@@ -208,6 +208,7 @@ Currently focused on [motita](https://github.com/madkoding/motita), an autonomou
 #### [motita](https://github.com/madkoding/motita)
 [![License](https://img.shields.io/github/license/madkoding/motita?label=License)](https://github.com/madkoding/motita)
 [![Last commit](https://img.shields.io/github/last-commit/madkoding/motita?label=Last%20commit)](https://github.com/madkoding/motita/commits)
+[![CI](https://img.shields.io/github/check-runs/madkoding/motita/HEAD?label=CI)](https://github.com/madkoding/motita/actions)
 
 <img src="./profile/projects/motita.svg" width="100%" alt="motita - Autonomous coding agent in Go"/>
 
@@ -221,6 +222,7 @@ Autonomous AI coding agent in pure Go. The model only proposes actions; a projec
 #### [madOS](https://github.com/madoslinux/mad-os)
 [![License](https://img.shields.io/github/license/madoslinux/mad-os?label=License)](https://github.com/madoslinux/mad-os)
 [![Last commit](https://img.shields.io/github/last-commit/madoslinux/mad-os?label=Last%20commit)](https://github.com/madoslinux/mad-os/commits)
+[![CI](https://img.shields.io/github/check-runs/madoslinux/mad-os/HEAD?label=CI)](https://github.com/madoslinux/mad-os/actions)
 
 <img src="./profile/projects/mados.svg" width="100%" alt="madOS - AI-Orchestrated Arch Linux Distribution"/>
 
@@ -236,6 +238,7 @@ Arch Linux distribution built with archiso for modern hardware with GPU accelera
 #### [CodeNexum](https://github.com/madkoding/codenexum)
 [![License](https://img.shields.io/github/license/madkoding/codenexum?label=License)](https://github.com/madkoding/codenexum)
 [![Last commit](https://img.shields.io/github/last-commit/madkoding/codenexum?label=Last%20commit)](https://github.com/madkoding/codenexum/commits)
+[![CI](https://img.shields.io/github/check-runs/madkoding/codenexum/HEAD?label=CI)](https://github.com/madkoding/codenexum/actions)
 
 <img src="./profile/projects/codenexum.svg" width="100%" alt="CodeNexum - Code index and context compression for opencode"/>
 
@@ -276,6 +279,7 @@ Automated Git intelligence engine in Rust that synthesizes work summaries from r
 
 #### [super-shell-tui](https://github.com/madkoding/super-shell-tui)
 [![License](https://img.shields.io/github/license/madkoding/super-shell-tui?label=License)](https://github.com/madkoding/super-shell-tui) [![Last commit](https://img.shields.io/github/last-commit/madkoding/super-shell-tui?label=Last%20commit)](https://github.com/madkoding/super-shell-tui/commits)
+[![CI](https://img.shields.io/github/check-runs/madkoding/super-shell-tui/HEAD?label=CI)](https://github.com/madkoding/super-shell-tui/actions)
 
 <img src="./profile/projects/super-shell-tui.svg" width="100%" alt="super-shell-tui - Tabbed and split-pane shells in the terminal"/>
 
@@ -285,18 +289,79 @@ Terminal UI in Go (Bubble Tea) that embeds real interactive shells in tabs and s
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+#### [Tachikoma](https://github.com/madkoding/tachikoma)
+[![License](https://img.shields.io/github/license/madkoding/tachikoma?label=License)](https://github.com/madkoding/tachikoma)
+[![Last commit](https://img.shields.io/github/last-commit/madkoding/tachikoma?label=Last%20commit)](https://github.com/madkoding/tachikoma/commits)
+[![CI](https://img.shields.io/github/check-runs/madkoding/tachikoma/HEAD?label=CI)](https://github.com/madkoding/tachikoma/actions)
+
+<img src="./profile/projects/tachikoma.svg" width="100%" alt="Tachikoma - Modular AI ecosystem"/>
+
+Modular AI ecosystem with GraphRAG memory on SurrealDB, multi-model routing and a built-in tool set.
+
+`SurrealDB` `GraphRAG` `LLM Routing` `Tools`
+
+</td>
+<td width="50%" valign="top">
+
+#### [madTrackers](https://www.madtrackers.com)
+
+<img src="./profile/projects/madtrackers.svg" width="100%" alt="madTrackers - Full-body VR tracking"/>
+
+Full-body VR tracking for SlimeVR: custom tracker PCBs, tracker and receiver firmware (nRF52 / nRF54L on Zephyr), server and storefront.
+
+`Zephyr` `nRF52` `nRF54L` `SlimeVR` `PCB`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### [KodingVibes](https://github.com/kodingvibes)
+
+
+<img src="./profile/projects/kodingvibes.svg" width="100%" alt="KodingVibes - Developer community platform"/>
+
+Developer community platform with SSO, real-time chat with WebRTC voice rooms, and a microfrontend architecture.
+
+`Microfrontends` `SSO` `WebRTC` `WebSocket`
+
+</td>
+<td width="50%" valign="top">
+
+#### [mmorpgvt](https://github.com/madkoding/mmorpgvt)
+[![License](https://img.shields.io/github/license/madkoding/mmorpgvt?label=License)](https://github.com/madkoding/mmorpgvt)
+[![Last commit](https://img.shields.io/github/last-commit/madkoding/mmorpgvt?label=Last%20commit)](https://github.com/madkoding/mmorpgvt/commits)
+[![CI](https://img.shields.io/github/check-runs/madkoding/mmorpgvt/HEAD?label=CI)](https://github.com/madkoding/mmorpgvt/actions)
+
+<img src="./profile/projects/mmorpgvt.svg" width="100%" alt="mmorpgvt - Chat-driven MMORPG for VTuber streams"/>
+
+Chat-driven MMORPG engine for VTuber Twitch streams, where the audience plays through chat commands.
+
+`Twitch` `Game Engine` `VTuber`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### [ESP32 Android Auto WiFi](https://github.com/madkoding/esp32-android-auto-wifi)
+[![License](https://img.shields.io/github/license/madkoding/esp32-android-auto-wifi?label=License)](https://github.com/madkoding/esp32-android-auto-wifi)
+[![Last commit](https://img.shields.io/github/last-commit/madkoding/esp32-android-auto-wifi?label=Last%20commit)](https://github.com/madkoding/esp32-android-auto-wifi/commits)
+[![CI](https://img.shields.io/github/check-runs/madkoding/esp32-android-auto-wifi/HEAD?label=CI)](https://github.com/madkoding/esp32-android-auto-wifi/actions)
+
+<img src="./profile/projects/esp32-android-auto-v2.svg" width="100%" alt="ESP32 Android Auto WiFi bridge"/>
+
+ESP32 bridge that connects Android Auto over WiFi automatically.
+
+`C` `ESP32` `IoT`
+
+</td>
+<td width="50%"></td>
+</tr>
 </table>
-
-### Also Building
-
-- [**madTrackers**](https://www.madtrackers.com): Full-body VR tracking: tracker and receiver firmware (nRF52 / nRF54L, Zephyr), server and storefront.
-- [**Tachikoma**](https://github.com/madkoding/tachikoma): Modular AI ecosystem with GraphRAG memory (SurrealDB), multi-model routing and built-in tools.
-  [![License](https://img.shields.io/github/license/madkoding/tachikoma?label=License)](https://github.com/madkoding/tachikoma) [![Last commit](https://img.shields.io/github/last-commit/madkoding/tachikoma?label=Last%20commit)](https://github.com/madkoding/tachikoma/commits)
-- [**KodingVibes**](https://github.com/kodingvibes): Developer community platform: SSO, real-time chat with WebRTC voice rooms, and microfrontends.
-- [**mmorpgvt**](https://github.com/madkoding/mmorpgvt): Chat-driven MMORPG engine for VTuber Twitch streams.
-  [![License](https://img.shields.io/github/license/madkoding/mmorpgvt?label=License)](https://github.com/madkoding/mmorpgvt) [![Last commit](https://img.shields.io/github/last-commit/madkoding/mmorpgvt?label=Last%20commit)](https://github.com/madkoding/mmorpgvt/commits)
-- [**ESP32 Android Auto WiFi**](https://github.com/madkoding/esp32-android-auto-wifi): ESP32 bridge that connects Android Auto over WiFi automatically.
-  [![License](https://img.shields.io/github/license/madkoding/esp32-android-auto-wifi?label=License)](https://github.com/madkoding/esp32-android-auto-wifi) [![Last commit](https://img.shields.io/github/last-commit/madkoding/esp32-android-auto-wifi?label=Last%20commit)](https://github.com/madkoding/esp32-android-auto-wifi/commits)
 
 > See all repositories at [github.com/madkoding?tab=repositories](https://github.com/madkoding?tab=repositories)
 
