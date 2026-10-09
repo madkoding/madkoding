@@ -156,7 +156,7 @@
       <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;0.7;1" dur="1.5s" repeatCount="indefinite"/>
     </circle>
-    <text x="28" y="18" font-family="monospace" font-size="11" fill="#27c93f">219+ tests — 100% pass rate</text>
+    <text x="28" y="18" font-family="monospace" font-size="11" fill="#27c93f">219+ tests, 100% pass rate</text>
   </g>
 
   <!-- Tech badges with hover effect simulation -->

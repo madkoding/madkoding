@@ -160,18 +160,18 @@
 
 ### About
 
-Full-stack software engineer based in Chile, building **autonomous AI agents**, **developer tooling** and **systems software** — from Go and Rust backends to React/TypeScript frontends, embedded firmware and a Linux distribution. I favor open-source, privacy-first software that runs on your own hardware: single static binaries, local models, no cloud lock-in.
+Full-stack software engineer based in Chile, building **autonomous AI agents**, **developer tooling** and **systems software**, from Go and Rust backends to React/TypeScript frontends, embedded firmware and a Linux distribution. I favor open-source, privacy-first software that runs on your own hardware: single static binaries, local models, no cloud lock-in.
 
-Currently focused on [motita](https://github.com/madkoding/motita), an autonomous coding agent where a deterministic check — not the model — decides when the work is done. I also build production services (NestJS microservices, PostgreSQL, SSO integrations with Azure AD / SAML 2.0), and I work in Spanish and English. Beyond engineering, I am a **VTuber and content creator** focused on VR, full-body tracking and software development on Twitch and TikTok, and the creator of [madTrackers](https://www.madtrackers.com), a full-body VR tracking system (SlimeVR/VRChat).
+Currently focused on [motita](https://github.com/madkoding/motita), an autonomous coding agent where a deterministic check (not the model) decides when the work is done. I also build production services (NestJS microservices, PostgreSQL, SSO integrations with Azure AD / SAML 2.0), and I work in Spanish and English. Beyond engineering, I am a **VTuber and content creator** focused on VR, full-body tracking and software development on Twitch and TikTok, and the creator of [madTrackers](https://www.madtrackers.com), a full-body VR tracking system (SlimeVR/VRChat).
 
 **Core Competencies:**
 
-- **AI Agents & Tooling** — Autonomous coding agents with verifiable outcomes, multi-provider LLM routing, MCP tools, context compression, RAG and cognitive memory (RAPTOR, HNSW)
-- **Systems Programming** — Go and Rust single-binary software, terminal UIs, a custom Arch-based Linux distribution (archiso, Hyprland), kernel tuning
-- **Backend & Integrations** — Rust (Axum), Go, NestJS microservices, PostgreSQL, REST and WebSocket APIs, SSO (Azure AD / SAML 2.0)
-- **Frontend** — React, TypeScript, Preact, real-time web interfaces
-- **Infrastructure & DevOps** — Docker, GitHub Actions CI/CD, automated ISO builds
-- **Embedded & Hardware** — nRF52 / nRF54L firmware (Zephyr), ESP32 IoT, full-body VR tracking (madTrackers)
+- **AI Agents & Tooling**: Autonomous coding agents with verifiable outcomes, multi-provider LLM routing, MCP tools, context compression, RAG and cognitive memory (RAPTOR, HNSW)
+- **Systems Programming**: Go and Rust single-binary software, terminal UIs, a custom Arch-based Linux distribution (archiso, Hyprland), kernel tuning
+- **Backend & Integrations**: Rust (Axum), Go, NestJS microservices, PostgreSQL, REST and WebSocket APIs, SSO (Azure AD / SAML 2.0)
+- **Frontend**: React, TypeScript, Preact, real-time web interfaces
+- **Infrastructure & DevOps**: Docker, GitHub Actions CI/CD, automated ISO builds
+- **Embedded & Hardware**: nRF52 / nRF54L firmware (Zephyr), ESP32 IoT, full-body VR tracking (madTrackers)
 
 ```aura width=860 height=110
 <div style={{
@@ -224,7 +224,7 @@ Autonomous AI coding agent in pure Go. The model only proposes actions; a projec
 
 <img src="./profile/projects/mados.svg" width="100%" alt="madOS - AI-Orchestrated Arch Linux Distribution"/>
 
-Arch Linux distribution built with archiso for modern hardware with GPU acceleration: Hyprland (Vulkan/OpenGL), NVIDIA/AMD/Intel drivers, CUDA toolkit, the OpenCode AI assistant integrated out of the box, and a GTK graphical installer. Built as a family of components — linux-zen kernel with the BORE scheduler, an OTA updater with Btrfs snapshots, a launcher and media apps — under the [madoslinux](https://github.com/madoslinux) organization.
+Arch Linux distribution built with archiso for modern hardware with GPU acceleration: Hyprland (Vulkan/OpenGL), NVIDIA/AMD/Intel drivers, CUDA toolkit, the OpenCode AI assistant integrated out of the box, and a GTK graphical installer. Built as a family of components: linux-zen kernel with the BORE scheduler, an OTA updater with Btrfs snapshots, a launcher and media apps, under the [madoslinux](https://github.com/madoslinux) organization.
 
 `Arch Linux` `Hyprland` `archiso` `GTK` `Btrfs`
 
@@ -251,7 +251,7 @@ Code indexer and context compression engine for [opencode](https://opencode.ai).
 
 <img src="./profile/projects/fractalmind.svg" width="100%" alt="Fractal-Mind - AI Cognitive Engine with Evolutionary Memory"/>
 
-Production cognitive engine implementing RAPTOR-based fractal graphs with HNSW vector indexing over SurrealDB. Dual-phase architecture: **Vigilia** (real-time graph traversal) and **REM** (asynchronous consolidation). Features multi-user namespace isolation, multi-format ingestion (PDF/OCR), and multi-embedding support (Nomic, BGE, CLIP). Complete delivery — 12/12 roadmap features shipped.
+Production cognitive engine implementing RAPTOR-based fractal graphs with HNSW vector indexing over SurrealDB. Dual-phase architecture: **Vigilia** (real-time graph traversal) and **REM** (asynchronous consolidation). Features multi-user namespace isolation, multi-format ingestion (PDF/OCR), and multi-embedding support (Nomic, BGE, CLIP). Complete delivery: 12/12 roadmap features shipped.
 
 `Rust` `Axum` `SurrealDB` `Tauri` `Vector Embeddings`
 
@@ -287,11 +287,11 @@ Terminal UI in Go (Bubble Tea) that embeds real interactive shells in tabs and s
 
 ### Also Building
 
-- [**madTrackers**](https://www.madtrackers.com) — Full-body VR tracking: tracker and receiver firmware (nRF52 / nRF54L, Zephyr), server and storefront.
-- [**Tachikoma**](https://github.com/madkoding/tachikoma) — Modular AI ecosystem with GraphRAG memory (SurrealDB), multi-model routing and built-in tools.
-- [**KodingVibes**](https://github.com/kodingvibes) — Developer community platform: SSO, real-time chat with WebRTC voice rooms, and microfrontends.
-- [**mmorpgvt**](https://github.com/madkoding/mmorpgvt) — Chat-driven MMORPG engine for VTuber Twitch streams.
-- [**ESP32 Android Auto WiFi**](https://github.com/madkoding/esp32-android-auto-wifi) — ESP32 bridge that connects Android Auto over WiFi automatically.
+- [**madTrackers**](https://www.madtrackers.com): Full-body VR tracking: tracker and receiver firmware (nRF52 / nRF54L, Zephyr), server and storefront.
+- [**Tachikoma**](https://github.com/madkoding/tachikoma): Modular AI ecosystem with GraphRAG memory (SurrealDB), multi-model routing and built-in tools.
+- [**KodingVibes**](https://github.com/kodingvibes): Developer community platform: SSO, real-time chat with WebRTC voice rooms, and microfrontends.
+- [**mmorpgvt**](https://github.com/madkoding/mmorpgvt): Chat-driven MMORPG engine for VTuber Twitch streams.
+- [**ESP32 Android Auto WiFi**](https://github.com/madkoding/esp32-android-auto-wifi): ESP32 bridge that connects Android Auto over WiFi automatically.
 
 > See all repositories at [github.com/madkoding?tab=repositories](https://github.com/madkoding?tab=repositories)
 
