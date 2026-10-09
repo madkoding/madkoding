@@ -331,22 +331,6 @@ Developer community platform with SSO, real-time chat with WebRTC voice rooms, a
 </td>
 <td width="50%" valign="top">
 
-#### [mmorpgvt](https://github.com/madkoding/mmorpgvt)
-[![License](https://img.shields.io/github/license/madkoding/mmorpgvt?label=License)](https://github.com/madkoding/mmorpgvt)
-[![Last commit](https://img.shields.io/github/last-commit/madkoding/mmorpgvt?label=Last%20commit)](https://github.com/madkoding/mmorpgvt/commits)
-[![CI](https://img.shields.io/github/check-runs/madkoding/mmorpgvt/HEAD?label=CI)](https://github.com/madkoding/mmorpgvt/actions)
-
-<img src="./profile/projects/mmorpgvt.svg" width="100%" alt="mmorpgvt - Chat-driven MMORPG for VTuber streams"/>
-
-Chat-driven MMORPG engine for VTuber Twitch streams, where the audience plays through chat commands.
-
-`Twitch` `Game Engine` `VTuber`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
 #### [ESP32 Android Auto WiFi](https://github.com/madkoding/esp32-android-auto-wifi)
 [![License](https://img.shields.io/github/license/madkoding/esp32-android-auto-wifi?label=License)](https://github.com/madkoding/esp32-android-auto-wifi)
 [![Last commit](https://img.shields.io/github/last-commit/madkoding/esp32-android-auto-wifi?label=Last%20commit)](https://github.com/madkoding/esp32-android-auto-wifi/commits)
@@ -359,7 +343,6 @@ ESP32 bridge that connects Android Auto over WiFi automatically.
 `C` `ESP32` `IoT`
 
 </td>
-<td width="50%"></td>
 </tr>
 </table>
 
