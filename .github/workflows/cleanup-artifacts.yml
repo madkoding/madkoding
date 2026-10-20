@@ -45,6 +45,8 @@ jobs:
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
         run: |
           set -euo pipefail
-          .github/scripts/purge-artifacts.sh \
+          # Invoked through bash on purpose: the executable bit is not set on
+          # the script, and a checkout from Windows never sets it.
+          bash .github/scripts/purge-artifacts.sh \
             "${{ inputs.max_age_days || '7' }}" \
             "${{ inputs.cache_age_days || '30' }}"
