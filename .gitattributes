@@ -1,0 +1,3 @@
+# The cleanup script runs under bash on the runner: a CRLF line ending would
+# turn into "command not found" there.
+*.sh text eol=lf
