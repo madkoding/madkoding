@@ -1,0 +1,23 @@
+{
+  "name": "madkoding-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Landing de madKoding: redes sociales y proyectos (Vercel).",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs",
+    "sync:projects": "node scripts/sync-projects.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

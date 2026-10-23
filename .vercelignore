@@ -1,6 +1,0 @@
-# Solo se publica la carpeta site/ (ver vercel.json → outputDirectory)
-.github
-profile
-README.md
-readme.source.md
-SECURITY.md

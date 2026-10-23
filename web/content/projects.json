@@ -1,0 +1,124 @@
+[
+  {
+    "id": "motita",
+    "name": "motita",
+    "url": "https://github.com/madkoding/motita",
+    "kind": "github",
+    "featured": true,
+    "category": ["ai", "systems"],
+    "tags": ["Go", "AI Agents", "Sandbox", "Git Worktrees", "TUI"],
+    "desc": {
+      "es": "Agente de código autónomo en Go puro. El modelo propone; un check determinista decide cuándo la tarea está lista. Un solo binario estático.",
+      "en": "Autonomous AI coding agent in pure Go. The model only proposes actions; a project-defined check (go test, make check, cargo test, pytest…) decides when a task is done, feeds the real error output back on failure, and stops honestly instead of claiming success. Parallel agents on isolated git worktrees, terminal and web UI, sessions with checkpoints, and a sandbox with guardrails that cannot be disabled. One static binary, standard library only, no cgo. Works with OpenAI, Anthropic, Gemini, Ollama, Qwen and OpenAI-compatible hosts. 3,700+ tests."
+    }
+  },
+  {
+    "id": "mados",
+    "name": "madOS",
+    "url": "https://github.com/madoslinux/mad-os",
+    "kind": "github",
+    "category": ["systems"],
+    "tags": ["Arch Linux", "Hyprland", "archiso", "GTK", "Btrfs"],
+    "desc": {
+      "es": "Distribución Arch Linux con Hyprland, drivers GPU, CUDA, asistente de IA integrado e instalador gráfico.",
+      "en": "Arch Linux distribution built with archiso for modern hardware with GPU acceleration: Hyprland (Vulkan/OpenGL), NVIDIA/AMD/Intel drivers, CUDA toolkit, the OpenCode AI assistant integrated out of the box, and a GTK graphical installer. Built as a family of components: linux-zen kernel with the BORE scheduler, an OTA updater with Btrfs snapshots, a launcher and media apps, under the madoslinux organization."
+    }
+  },
+  {
+    "id": "codenexum",
+    "name": "CodeNexum",
+    "url": "https://github.com/madkoding/codenexum",
+    "kind": "github",
+    "category": ["ai"],
+    "tags": ["TypeScript", "Electron", "React", "SQLite", "MCP"],
+    "desc": {
+      "es": "Indexador de código y motor de compresión de contexto para opencode. 9 herramientas MCP, dashboard en vivo y 40–80% de ahorro.",
+      "en": "Code indexer and context compression engine for opencode. Replaces raw read, grep, glob and bash output with indexed chunks, semantic summaries and compressed logs (incremental FTS5 + BM25 over local SQLite), adds caller/callee impact analysis, and exposes 9 MCP tools. Includes a live dashboard and tray app. Reports 40–80% tool-output savings on mid-size projects."
+    }
+  },
+  {
+    "id": "fractal-mind",
+    "name": "Fractal-Mind",
+    "url": "https://github.com/madkoding/fractalmind",
+    "kind": "github",
+    "category": ["ai"],
+    "tags": ["Rust", "Axum", "SurrealDB", "Tauri", "Vector Embeddings"],
+    "desc": {
+      "es": "Motor cognitivo con grafos fractales RAPTOR e índice vectorial HNSW sobre SurrealDB. Ingesta PDF/OCR y multi-embedding.",
+      "en": "Production cognitive engine implementing RAPTOR-based fractal graphs with HNSW vector indexing over SurrealDB. Dual-phase architecture: Vigilia (real-time graph traversal) and REM (asynchronous consolidation). Features multi-user namespace isolation, multi-format ingestion (PDF/OCR), and multi-embedding support (Nomic, BGE, CLIP). Complete delivery: 12/12 roadmap features shipped."
+    }
+  },
+  {
+    "id": "git-reports",
+    "name": "Git Reports",
+    "url": "https://github.com/madkoding/git-reports",
+    "kind": "github",
+    "category": ["ai", "systems"],
+    "tags": ["Rust", "Git", "LLM", "GitHub Actions", "CI/CD"],
+    "desc": {
+      "es": "Motor de inteligencia Git en Rust: resúmenes de trabajo a partir de commits, patrones de contribución y tendencias, con generación LLM.",
+      "en": "Automated Git intelligence engine in Rust that synthesizes work summaries from repository activity. Processes commits, contributor patterns, and temporal trends with configurable time windows and multi-format export. LLM-powered natural language generation for executive summaries. Full CI/CD pipeline with comprehensive test coverage."
+    }
+  },
+  {
+    "id": "super-shell-tui",
+    "name": "super-shell-tui",
+    "url": "https://github.com/madkoding/super-shell-tui",
+    "kind": "github",
+    "category": ["systems"],
+    "tags": ["Go", "Bubble Tea", "PTY", "TUI"],
+    "desc": {
+      "es": "TUI en Go (Bubble Tea) con shells interactivas reales en pestañas y paneles divididos. PTY directo, scrollback con búsqueda y restauración de sesión.",
+      "en": "Terminal UI in Go (Bubble Tea) that embeds real interactive shells in tabs and split panes. Keys go straight to a PTY, so completion, history and reverse search behave like a normal terminal. Up to 9 tabs, zoom, 10,000-line scrollback with search, mouse support with OSC 52 copy, session restore, and a TOML config for keybindings and colors. Linux and macOS."
+    }
+  },
+  {
+    "id": "tachikoma",
+    "name": "Tachikoma",
+    "url": "https://github.com/madkoding/tachikoma",
+    "kind": "github",
+    "category": ["ai"],
+    "tags": ["SurrealDB", "GraphRAG", "LLM Routing", "Tools"],
+    "desc": {
+      "es": "Ecosistema de IA modular con memoria GraphRAG en SurrealDB, enrutamiento multi-modelo y set de herramientas integrado.",
+      "en": "Modular AI ecosystem with GraphRAG memory on SurrealDB, multi-model routing and a built-in tool set."
+    }
+  },
+  {
+    "id": "madtrackers",
+    "name": "madTrackers",
+    "url": "https://www.madtrackers.com",
+    "kind": "site",
+    "featured": true,
+    "category": ["hardware"],
+    "tags": ["Zephyr", "nRF52", "nRF54L", "SlimeVR", "PCB"],
+    "desc": {
+      "es": "Full-body VR tracking para SlimeVR y VRChat: PCBs propias, firmware nRF52 / nRF54L en Zephyr, servidor y tienda.",
+      "en": "Full-body VR tracking for SlimeVR: custom tracker PCBs, tracker and receiver firmware (nRF52 / nRF54L on Zephyr), server and storefront."
+    }
+  },
+  {
+    "id": "kodingvibes",
+    "name": "KodingVibes",
+    "url": "https://github.com/kodingvibes",
+    "kind": "github",
+    "category": ["web"],
+    "tags": ["Microfrontends", "SSO", "WebRTC", "WebSocket"],
+    "desc": {
+      "es": "Plataforma de comunidad para devs con SSO, chat en tiempo real, salas de voz WebRTC y arquitectura de microfrontends.",
+      "en": "Developer community platform with SSO, real-time chat with WebRTC voice rooms, and a microfrontend architecture."
+    }
+  },
+  {
+    "id": "esp32-android-auto-wifi",
+    "name": "ESP32 Android Auto WiFi",
+    "url": "https://github.com/madkoding/esp32-android-auto-wifi",
+    "kind": "github",
+    "category": ["hardware"],
+    "tags": ["C", "ESP32", "IoT"],
+    "desc": {
+      "es": "Puente ESP32 que conecta Android Auto por WiFi automáticamente.",
+      "en": "ESP32 bridge that connects Android Auto over WiFi automatically."
+    }
+  }
+]

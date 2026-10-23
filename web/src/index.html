@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="theme-color" content="#07000f">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="{{url}}/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="madKoding">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:url" content="{{url}}/">
+  <meta property="og:image" content="{{url}}/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@madkoding">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/icon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+  <link rel="apple-touch-icon" href="/img/icon-180.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Bakbak+One&family=JetBrains+Mono:wght@400;700&display=swap">
+  <link rel="preload" as="image" href="/img/logo.webp" type="image/webp">
+  <link rel="stylesheet" href="{{css}}">
+  <script src="{{initJs}}"></script>
+  <script type="application/ld+json">{{jsonld}}</script>
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true" focusable="false"><!--@sprite--></svg>
+
+  <a class="skip" href="#main">{{t.skip}}</a>
+
+  <!-- Capas de fondo: escena 3D + efectos CRT -->
+  <canvas id="bg" class="bg" aria-hidden="true"></canvas>
+  <div class="fx" aria-hidden="true">
+    <div class="fx__hex"></div>
+    <div class="fx__shade"></div>
+    <div class="fx__scan"></div>
+    <div class="fx__vignette"></div>
+    <div class="fx__glow" id="glow"></div>
+  </div>
+
+  <!-- Navegación: barra superior en escritorio, dock inferior en móvil -->
+  <header class="nav" id="nav">
+    <nav class="nav__in" {{t.nav.label.attrs}}>
+      <a class="nav__brand" href="#top" aria-label="madKoding">
+        <img src="/img/avatar.webp" width="512" height="512" alt="" class="nav__avatar">
+        <span class="nav__name">mad<b>Koding</b></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#redes" data-nav="redes"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg><span>{{t.nav.socials}}</span></a></li>
+        <li><a href="#proyectos" data-nav="proyectos"><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg><span>{{t.nav.projects}}</span></a></li>
+        <li><a href="#contacto" data-nav="contacto"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span>{{t.nav.contact}}</span></a></li>
+      </ul>
+      <div class="nav__tools">
+        <button class="tool" id="lang" type="button" {{t.langSwitch.attrs}}><span class="tool__txt" aria-hidden="true">EN</span></button>
+        <button class="tool" id="fx" type="button" aria-pressed="true" {{t.fx.attrs}} hidden><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg><span class="tool__txt" aria-hidden="true">3D</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================================================================ HERO -->
+    <section class="hero" id="top">
+      <div class="hero__in">
+        <div class="avatar" id="avatar">
+          <span class="avatar__ring" aria-hidden="true"></span>
+          <img class="avatar__img" src="/img/avatar.webp" width="512" height="512" {{t.alt.avatar.attrs:alt}} fetchpriority="high">
+          <span class="avatar__live" hidden>LIVE</span>
+        </div>
+        <h1 class="hero__logo"><img src="/img/logo.webp" width="996" height="260" alt="madKoding" fetchpriority="high"></h1>
+        <p class="hero__tag mono">{{t.tagline}}</p>
+        <p class="hero__roles mono" aria-hidden="true"><span class="prompt">&gt;</span> <span id="role" data-roles="{{roles}}">VTuber</span><span class="caret"></span></p>
+        <p class="hero__bio">{{t.bio}}</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" id="cta-twitch" href="https://twitch.tv/{{twitch}}" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-twitch"/></svg>
+            <span class="cta__off">{{t.hero.watch}}</span><span class="cta__on">{{t.hero.live}}</span>
+          </a>
+          <a class="btn btn--ghost" href="#proyectos"><span>{{t.hero.projects}}</span><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></a>
+        </div>
+        <p class="hero__livemeta mono" id="livemeta" hidden></p>
+      </div>
+      <a class="hero__scroll mono" href="#lore" {{t.alt.scroll.attrs}}><span>{{t.hero.scroll}}</span><svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></a>
+    </section>
+
+    <!-- ================================================================ LORE -->
+    <section class="section section--narrow" id="lore" aria-label="Lore">
+      <div class="panel panel--term reveal">
+        <div class="term__bar mono"><span class="term__dots" aria-hidden="true"><i></i><i></i><i></i></span><span>~/madkoding/{{t.lore.title}}</span></div>
+        <div class="term__body mono">
+          <p class="term__cmd"><span class="ps">$</span> cat lore.log</p>
+          <!--@lore-->
+          <p class="term__cmd"><span class="ps">$</span> <span class="caret"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================== REDES -->
+    <section class="section" id="redes" aria-labelledby="redes-h">
+      <h2 class="h2 reveal" id="redes-h"><span>{{t.socials.title}}</span> <em>{{t.socials.accent}}</em></h2>
+      <ul class="grid grid--socials">
+<!--@socials-->
+      </ul>
+    </section>
+
+    <!-- ============================================================ PROYECTOS -->
+    <section class="section" id="proyectos" aria-labelledby="proy-h">
+      <h2 class="h2 reveal" id="proy-h"><span>{{t.projects.title}}</span> <em>{{t.projects.accent}}</em></h2>
+
+      <div class="toolbar reveal">
+        <label class="search">
+          <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+          <span class="sr-only">{{t.projects.searchLabel}}</span>
+          <input id="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" {{t.projects.search.attrs:placeholder}}>
+          <kbd class="search__key mono" aria-hidden="true">/</kbd>
+        </label>
+        <div class="chips" role="group" {{t.projects.filters.attrs:aria-label}}>
+<!--@filters-->
+        </div>
+        <p class="count mono" id="count" role="status" aria-live="polite" data-tpl="{{countTpl}}" data-total="{{total}}"></p>
+      </div>
+
+      <ul class="grid grid--projects" id="projects">
+<!--@projects-->
+      </ul>
+
+      <div class="empty panel" id="empty" hidden>
+        <p>{{t.projects.empty}}</p>
+        <button class="btn btn--ghost" id="reset" type="button">{{t.projects.reset}}</button>
+      </div>
+
+      <p class="center"><a class="btn btn--ghost" href="https://github.com/madkoding?tab=repositories" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><span>{{t.projects.all}}</span></a></p>
+    </section>
+
+    <!-- ============================================================ CONTACTO -->
+    <section class="section section--narrow" id="contacto" aria-labelledby="contacto-h">
+      <div class="panel panel--contact reveal">
+        <h2 class="h2" id="contacto-h"><span>{{t.contact.title}}</span></h2>
+        <p class="contact__text">{{t.contact.text}}</p>
+        <div class="contact__actions">
+          <a class="btn btn--mail" href="mailto:{{email}}"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span>{{t.contact.mail}}</span></a>
+          <button class="btn btn--ghost" id="copy" type="button" data-email="{{email}}" hidden><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span>{{t.contact.copy}}</span></button>
+        </div>
+        <p class="contact__addr mono">{{email}}</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">{{year}}</span> madKoding · {{t.footer.made}} · <a href="https://github.com/madkoding/madkoding" target="_blank" rel="noopener">{{t.footer.source}}</a></p>
+    <p><a href="#top">{{t.footer.top}} ↑</a></p>
+  </footer>
+
+  <div class="toast mono" id="toast" role="status" aria-live="polite" data-msg="{{toastMsg}}"></div>
+
+  <script type="module" src="{{mainJs}}"></script>
+</body>
+</html>
