@@ -1,0 +1,43 @@
+name: Sync web projects
+
+# Mantiene web/content/projects.json alineado con la sección Projects de readme.source.md.
+# Conserva las traducciones, categorías y destacados que están a mano en el JSON.
+
+on:
+  push:
+    branches: [main]
+    paths: ['readme.source.md']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-projects
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Sync projects.json from readme.source.md
+        run: node web/scripts/sync-projects.mjs | tee "$RUNNER_TEMP/sync.log"
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet -- web/content/projects.json; then
+            echo "projects.json ya está al día."
+            exit 0
+          fi
+          {
+            echo "### Proyectos sincronizados"
+            sed 's/^/- /' "$RUNNER_TEMP/sync.log"
+          } >> "$GITHUB_STEP_SUMMARY"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/content/projects.json
+          git commit -m "chore(web): sync projects from readme.source.md"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
