@@ -1,0 +1,61 @@
+{
+  "url": "https://madkoding.vercel.app",
+  "name": "madKoding",
+  "email": "madkoding@gmail.com",
+  "twitchLogin": "madkoding",
+  "tagline": { "es": "VTuber · He / Him · Chile", "en": "VTuber · He / Him · Chile" },
+  "roles": {
+    "es": ["VTuber", "Full-stack dev", "Creador de madTrackers", "VR y full-body tracking", "Streamer en Twitch"],
+    "en": ["VTuber", "Full-stack dev", "Creator of madTrackers", "VR and full-body tracking", "Twitch streamer"]
+  },
+  "description": {
+    "es": "madKoding: VTuber chileno, creador de madTrackers y de proyectos open source. Redes sociales y enlaces a todos mis proyectos en un solo lugar.",
+    "en": "madKoding: Chilean VTuber, creator of madTrackers and open source projects. Social links and every project page in one place."
+  },
+  "bio": {
+    "es": "Intento mantenerme en la raya del seiso, aunque parece imposible en Twitter. Ex jugador de Tetris, tecleo a tiempo completo, uso grinder para conseguir cromos e inmunosupresores.",
+    "en": "I try to keep my seiso (pure idol) image, though it seems impossible on Twitter. Ex Tetris player, I type full-time and use the grinder to get trading cards and immunosuppressants."
+  },
+  "lore": {
+    "es": [
+      "Vivía tranquilamente en el mundo VR hasta que la magia colapsó.",
+      "Así fue como llegué al mundo terrenal, donde debo trabajar para poder pagarme arriendo, luz e internet para volver al mundo VR.",
+      "Mientras tanto construyo madTrackers y un montón de software open source."
+    ],
+    "en": [
+      "I was living peacefully in the VR world until the magic collapsed.",
+      "That is how I ended up in the earthly world, where I have to work to pay rent, power and internet so I can go back to the VR world.",
+      "Meanwhile I build madTrackers and a pile of open source software."
+    ]
+  },
+  "socials": [
+    {
+      "id": "twitch", "name": "Twitch", "handle": "@madkoding", "url": "https://twitch.tv/madkoding", "icon": "twitch",
+      "desc": { "es": "Just chatting, Tetr.io, VR, código en vivo y muchos ratos por compartir", "en": "Just chatting, Tetr.io, VR, live coding and plenty of time to share" }
+    },
+    {
+      "id": "x", "name": "X / Twitter", "handle": "@madkoding", "url": "https://x.com/madkoding", "icon": "x",
+      "desc": { "es": "Mis desahogos emocionales entre un montón de desconocidos", "en": "My emotional vents among a bunch of strangers" }
+    },
+    {
+      "id": "youtube", "name": "YouTube", "handle": "@madkoding", "url": "https://www.youtube.com/@madkoding", "icon": "youtube",
+      "desc": { "es": "VODs, clips y videos de VR, full-body tracking y desarrollo", "en": "VODs, clips and videos about VR, full-body tracking and development" }
+    },
+    {
+      "id": "tiktok", "name": "TikTok", "handle": "@madkodingvr", "url": "https://www.tiktok.com/@madkodingvr", "icon": "tiktok",
+      "desc": { "es": "Full cringe para mis seguidores", "en": "Full cringe for my followers" }
+    },
+    {
+      "id": "instagram", "name": "Instagram", "handle": "@madkoding", "url": "https://instagram.com/madkoding", "icon": "instagram",
+      "desc": { "es": "Imágenes random del día a día", "en": "Random pictures from day to day" }
+    },
+    {
+      "id": "discord", "name": "Discord", "handle": "discord.gg/madkoding", "url": "https://discord.gg/madkoding", "icon": "discord",
+      "desc": { "es": "La comunidad: VR, trackers, código y memes", "en": "The community: VR, trackers, code and memes" }
+    },
+    {
+      "id": "github", "name": "GitHub", "handle": "madkoding", "url": "https://github.com/madkoding", "icon": "github",
+      "desc": { "es": "Todo el código: agentes de IA, firmware, Go, Rust y una distro Linux", "en": "All the code: AI agents, firmware, Go, Rust and a Linux distro" }
+    }
+  ]
+}

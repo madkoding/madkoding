@@ -1,0 +1,196 @@
+{
+  "skip": {
+    "es": "Saltar al contenido",
+    "en": "Skip to content"
+  },
+  "nav": {
+    "socials": {
+      "es": "Redes",
+      "en": "Socials"
+    },
+    "projects": {
+      "es": "Proyectos",
+      "en": "Projects"
+    },
+    "contact": {
+      "es": "Contacto",
+      "en": "Contact"
+    },
+    "label": {
+      "es": "Navegación principal",
+      "en": "Main navigation"
+    }
+  },
+  "fx": {
+    "es": "Efectos 3D",
+    "en": "3D effects"
+  },
+  "langSwitch": {
+    "es": "Cambiar idioma a inglés",
+    "en": "Switch language to Spanish"
+  },
+  "hero": {
+    "watch": {
+      "es": "Ver en Twitch",
+      "en": "Watch on Twitch"
+    },
+    "live": {
+      "es": "EN VIVO ahora",
+      "en": "LIVE now"
+    },
+    "projects": {
+      "es": "Ver proyectos",
+      "en": "See projects"
+    },
+    "scroll": {
+      "es": "Desliza",
+      "en": "Scroll"
+    }
+  },
+  "lore": {
+    "title": {
+      "es": "lore.log",
+      "en": "lore.log"
+    }
+  },
+  "socials": {
+    "title": {
+      "es": "Redes",
+      "en": "Social"
+    },
+    "accent": {
+      "es": "sociales",
+      "en": "links"
+    },
+    "live": {
+      "es": "EN VIVO",
+      "en": "LIVE"
+    },
+    "open": {
+      "es": "Abrir",
+      "en": "Open"
+    }
+  },
+  "projects": {
+    "title": {
+      "es": "Mis",
+      "en": "My"
+    },
+    "accent": {
+      "es": "proyectos",
+      "en": "projects"
+    },
+    "search": {
+      "es": "Buscar proyecto o tecnología…",
+      "en": "Search project or tech…"
+    },
+    "searchLabel": {
+      "es": "Buscar proyectos",
+      "en": "Search projects"
+    },
+    "filters": {
+      "es": "Filtrar por categoría",
+      "en": "Filter by category"
+    },
+    "count": {
+      "es": "{n} de {total} proyectos",
+      "en": "{n} of {total} projects"
+    },
+    "empty": {
+      "es": "Nada coincide con tu búsqueda.",
+      "en": "Nothing matches your search."
+    },
+    "reset": {
+      "es": "Limpiar filtros",
+      "en": "Clear filters"
+    },
+    "site": {
+      "es": "SITIO WEB",
+      "en": "WEBSITE"
+    },
+    "github": {
+      "es": "GITHUB",
+      "en": "GITHUB"
+    },
+    "featured": {
+      "es": "Destacado",
+      "en": "Featured"
+    },
+    "all": {
+      "es": "Ver todos los repos",
+      "en": "See all repos"
+    }
+  },
+  "categories": {
+    "all": {
+      "es": "Todos",
+      "en": "All"
+    },
+    "ai": {
+      "es": "IA",
+      "en": "AI"
+    },
+    "systems": {
+      "es": "Sistemas",
+      "en": "Systems"
+    },
+    "hardware": {
+      "es": "VR y hardware",
+      "en": "VR and hardware"
+    },
+    "web": {
+      "es": "Web",
+      "en": "Web"
+    }
+  },
+  "contact": {
+    "title": {
+      "es": "Hablemos",
+      "en": "Let's talk"
+    },
+    "text": {
+      "es": "Colaboraciones, trackers, código o simplemente saludar.",
+      "en": "Collabs, trackers, code, or just to say hi."
+    },
+    "mail": {
+      "es": "Enviar email",
+      "en": "Send email"
+    },
+    "copy": {
+      "es": "Copiar email",
+      "en": "Copy email"
+    },
+    "copied": {
+      "es": "Email copiado",
+      "en": "Email copied"
+    },
+    "copyFail": {
+      "es": "No se pudo copiar",
+      "en": "Could not copy"
+    }
+  },
+  "footer": {
+    "made": {
+      "es": "Hecho con cariño desde el mundo terrenal",
+      "en": "Made with love from the earthly world"
+    },
+    "source": {
+      "es": "código fuente",
+      "en": "source code"
+    },
+    "top": {
+      "es": "Volver arriba",
+      "en": "Back to top"
+    }
+  },
+  "alt": {
+    "avatar": {
+      "es": "Avatar VTuber de madKoding: chico gato con pelo morado y mechón verde",
+      "en": "madKoding VTuber avatar: cat boy with purple hair and a green streak"
+    },
+    "scroll": {
+      "es": "Ir a la siguiente sección",
+      "en": "Go to the next section"
+    }
+  }
+}
